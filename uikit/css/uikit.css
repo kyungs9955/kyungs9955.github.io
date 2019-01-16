@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 /* reset */
 html, body, div, span, applet, object, iframe,
@@ -22,7 +23,7 @@ time, mark, audio, video {
    color:#333;
 	vertical-align: baseline;
    box-sizing:border-box;
-   font-family: 'Noto Sans KR', sans-serif
+   font-family: 'Noto Sans KR', 'sans-serif';
 }
 a {
    text-decoration:none

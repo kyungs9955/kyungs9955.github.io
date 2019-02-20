@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   list-style: none;
+   vertical-align: baseline;
+   font-weight:normal
+}
+
+h1, h2, h3, h4, h5 {font-weight:normal}
+p {line-height:1.6em}
+a {text-decoration:none}
+em,address,i {font-style:normal}
+
+img,fieldset {border:0}
+img {vertical-align:middle}
+button {border:none}
+label {cursor:pointer}
+
+table{border-collapse:collapse}
+table th,table td{vertical-align:middle;text-align:center}
+table caption {display:none}
+
+html,body {width:100%;height:100%}
+.wrapper {width:1920px;height:1080px;background:#353535}
+
+.wrapper.main {position:relative}
+.wrapper.main::before {content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%;background:url('../images/bg_main.png') no-repeat 0 0}
+.wrapper.main .header {width:100%;text-align:center}
+.wrapper.main .header .title {margin-top:180px}
+.wrapper.main .content {width:100%;margin-top:90px}
+.wrapper.main .content ul {overflow:hidden;width:1600px;margin:0 auto}
+.wrapper.main .content li {position:relative;float:left;width:360px;height:492px;margin-left:40px;display:flex;align-items:center;justify-content:center}
+.wrapper.main .content li:nth-child(1) {margin-left:0}
+.wrapper.main .content li a {display:block;border-radius:10px;width:300px;height:410px;background:url('../images/bg_menu1.jpg') no-repeat center center}
+.wrapper.main .content li img {width:300px;height:410px}
+.wrapper.main .content li:nth-child(2) a {background-image:url('../images/bg_menu2.jpg')}
+.wrapper.main .content li:nth-child(3) a {background-image:url('../images/bg_menu3.jpg')}
+.wrapper.main .content li:nth-child(4) a {background-image:url('../images/bg_menu4.jpg')}
+.wrapper.main .content li:hover a {transition:all .5s;transform: scale(1.2);margin:0}
+
+.wrapper.sub {position:relative}
+.wrapper.sub .container {position:absolute;top:0;left:0;width:100%;height:100%;z-index:1}
+.wrapper.sub .container + .container {z-index:2}
+.wrapper.sub .header {overflow:hidden;padding:40px}
+.wrapper.sub .header .title {overflow:hidden;float:left}
+.wrapper.sub .header .title > img {float:left;margin-left:40px}
+.wrapper.sub .header .title .switch {float:left;margin-left:30px}
+.wrapper.sub .header .title .switch .button input[type=checkbox]{display:none}
+.wrapper.sub .header .title .switch .button label {position:relative;display:block;width:145px;height:60px;border-radius:60px;background:#fff}
+.wrapper.sub .header .title .switch .button label::before {content:'';position:absolute;top:6px;right:6px;display:block;width:48px;height:48px;border-radius:48px;background:#c00c3e;transition:all .5s}
+.wrapper.sub .header .title .switch .button label::after {content:'';position:absolute;top:0;left:0;display:block;width:60px;height:60px;margin-left:20px;background:url('../images/text_on.png') no-repeat 0 0;transition:all .5s}
+.wrapper.sub .header .title .switch .button input:checked + label::before {margin-right:85px;background:#6d6e70}
+.wrapper.sub .header .title .switch .button input:checked + label::after {margin-left:65px;background-image:url('../images/text_off.png')}
+.wrapper.sub .header .home {display:block;float:right;width:60px;height:60px;border-radius:100%}
+.wrapper.sub .header .home:hover {transition:all .3s;background:#b6264c}
+.wrapper.sub .header .home span {display:block;width:100%;height:100%;overflow:hidden;text-indent:-999px;background:url('../images/icon_home.png')}
+.wrapper.sub .menu {position:absolute;top:0;left:-320px;width:320px;z-index:10}
+.wrapper.sub .menu li {width:320px;height:270px;border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(0,0,0,0.7);box-sizing:border-box}
+.wrapper.sub .menu li a {display:block;width:100%;height:100%}
+.wrapper.sub .menu li a:hover {transition:all .3s;background:rgba(182,38,76,0.9)}
+.wrapper.sub .menu.open {transition:all .5s;left:0}
+.wrapper.sub .notice {position:absolute;bottom:0;left:0;width:100%;height:300px;background-image:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5))}
+.wrapper.sub .notice .cover {width:160px;height:210px;margin:75px auto 0;overflow:hidden;text-indent:-999px;background:url('../images/img_cover.png') no-repeat 0 0;animation: arrow 1.0s steps(7) infinite}
+@keyframes arrow {100%{background-position:-1120px 0}}

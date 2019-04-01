@@ -63,9 +63,10 @@ body {height:100%}
 .container {margin-left:240px;padding:50px}
 .container .section {padding:50px 0;border-top:1px solid #ccc}
 .container .section:first-of-type {padding-top:0;border-top:0}
-.container .section .code code {padding:30px;font-size:12px;line-height:normal;background:#f9f9f9}
 .container .section .title {font-size:24px;color:#364150}
 .container .section .title::before {content:'\0023';margin-right:5px}
+.container .section .code h3 {margin-top:20px}
+.container .section .code code {padding:30px;font-size:12px;line-height:normal;background:#f9f9f9}
 /*
 .container {overflow:hidden;height:calc(100% - 80px)}
 .aside {overflow-y:auto;float:left;width:240px;height:100%;padding:30px}

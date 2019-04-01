@@ -7,11 +7,14 @@
    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/color-brewer.min.css">
    <link href="https://fonts.googleapis.com/css?family=Lobster|Noto+Sans+KR|Righteous|Noto+Serif+KR|Oswald|Fugaz+One|Kanit" rel="stylesheet">
    <link rel="stylesheet" type="text/css" href="css/uikit.css">
-   <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.13.1/build/highlight.min.js"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.13.1/build/highlight.min.js"></script>
    <script src="https://cdn.jsdelivr.net/highlight.js/8.7/highlight.min.js"></script>
    <script>
       hljs.initHighlightingOnLoad();
-   </script>
+   </script> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/default.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+   <script>hljs.initHighlightingOnLoad();</script>
    <title>kyung UI Kit</title>
 </head>
 <body>
@@ -25,7 +28,7 @@
                   <a href="#reset">reset</a>
                </li>
                <li>
-                  <a href="#font">font</a>
+                  <a href="#animation">animation</a>
                </li>
             </ul>
          </div>
@@ -77,17 +80,23 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
-                  </code>
+}</code>
                </pre>
             </div>
          </div>
-         <div id="font" class="section">
-            <div class="title">font</div>
+         <div id="animation" class="section">
+            <div class="title">animation</div>
             <div class="code">
+               <h3>css</h3>
                <pre>
-                  <code>
-                  </code>
+                  <code><div class="cover">Cover here!</div></code>
+               </pre>
+            </div>
+            <div class="code">
+               <h3>css</h3>
+               <pre>
+                  <code>.cover {width:160px;height:210px;margin:75px auto 0;overflow:hidden;text-indent:-999px;background:url('../images/img_cover.png') no-repeat 0 0;animation: arrow 1.0s steps(7) infinite}
+@keyframes arrow {100%{background-position:-1120px 0}}</code>
                </pre>
             </div>
          </div>

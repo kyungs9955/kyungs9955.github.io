@@ -1,0 +1,55 @@
+@import url('reset.css');
+
+html,
+body {width:100%;height:100%}
+.icon {overflow:hidden;text-indent:-999px;background-image:url('../images/icon.png');background-repeat:no-repeat;background-size:110px 110px}
+
+.wrapper {position:relative;width:100%;height:100%}
+.header {position:relative;width:100%;height:60px;border-bottom:1px solid #ccc;background:#fff;box-sizing:border-box}
+.header .logo {padding:10px 0;font-weight:700;font-size:20px;letter-spacing:5px;text-align:center}
+.header .logo span {display:block;margin-top:2px;font-size:16px}
+.header .title {line-height:60px;text-align:center;font-size:20px}
+.header a.back {position:absolute;top:15px;left:15px;display:block;width:30px;height:30px;overflow:hidden;text-indent:-999px);background-position:-60px 0}
+
+.gnb {position:fixed;bottom:0;left:0;width:100%;height:60px;border-top:1px solid #ccc;background:#fff;box-sizing:border-box}
+.gnb ul {overflow:hidden}
+.gnb li {float:left;width:25%;padding:8px 0;text-align:center}
+.gnb li a {font-size:14px;color:#999}
+.gnb li a.on {color:#333}
+.gnb li a .icon {display:block;width:30px;height:26px;margin:0 auto}
+.gnb li:nth-child(1) a .icon {background-position:-30px 0}
+.gnb li:nth-child(2) a .icon {background-position:-30px -26px}
+.gnb li:nth-child(3) a .icon {background-position:-30px -52px}
+.gnb li:nth-child(4) a .icon {background-position:-30px -78px}
+.gnb li:nth-child(1) a.on .icon {background-position:0 0}
+.gnb li:nth-child(2) a.on .icon {background-position:0 -26px}
+.gnb li:nth-child(3) a.on .icon {background-position:0 -52px}
+.gnb li:nth-child(4) a.on .icon {background-position:0 -78px}
+
+.container {overflow-y:auto;width:100%;height:calc(100% - 120px);background:#f5f5f5;box-sizing:border-box}
+.main ul {padding:40px}
+.main li {margin-bottom:10px;text-align:center}
+.main a {display:block;padding:20px;color:#fff;background:#555}
+.location {position:relative;width:100%;height:100%}
+.location .area {width:100%;height:100%}
+.location .qrcode {position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0, 10% 0, 10% 70%, 90% 70%, 90% 30%, 10% 30%)}
+.location .notice {position:absolute;top:76%;width:100%;text-align:center;color:#fff}
+.catagory ul {overflow:hidden;padding:20px}
+.catagory li {float:left;width:calc(50% - 5px);margin-top:10px;margin-right:10px;box-sizing:border-box}
+.catagory a {display:block;height:160px;padding:18px;border-radius:10px;background-repeat:no-repeat;background-position:right bottom;background-size:160px 154px;box-sizing:border-box}
+.catagory a span {font-size:24px;color:#fff}
+.catagory li:nth-child(1),
+.catagory li:nth-child(2) {margin-top:0}
+.catagory li:nth-child(2n) {margin-right:0}
+.catagory li:nth-child(1) a {background-image:url('../images/bg_catagory1.png');background-color:#f7894d}
+.catagory li:nth-child(2) a {background-image:url('../images/bg_catagory2.png');background-color:#f06464}
+.catagory li:nth-child(3) a {background-image:url('../images/bg_catagory3.png');background-color:#875dc0}
+.catagory li:nth-child(4) a {background-image:url('../images/bg_catagory4.png');background-color:#447ec6}
+.massage .tit {margin-top:10px;padding:0 22px;line-height:40px;font-size:18px}
+.massage ul {background:#fff}
+.massage li {padding:10px 22px;border-bottom:1px solid #ddd;box-sizing:border-box}
+.massage li:last-child {border:0}
+.massage li strong {display:block;font-size:16px}
+.massage li span {display:block;margin-top:5px;font-size:14px;color:#666}
+.massage li select {width:100%;height:40px;padding:0 10px;font-size:14px;border:1px solid #ddd}
+.massage li textarea {width:100%;min-height:80px;padding:10px;font-size:14px;border:1px solid #ddd;box-sizing:border-box}

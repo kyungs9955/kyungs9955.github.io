@@ -1,0 +1,79 @@
+@import url('reset.css');
+
+/* common */
+html,
+body,
+.wrapper {width:100%;height:100%}
+
+label {display:none}
+input[type="text"],
+input[type="password"] {width:100%;height:40px;padding:5px 10px;border:1px solid #ccc;border-radius:5px;background:#f9f9f9;box-sizing:border-box;outline:none}
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {color:#999}
+input[type="text"]:focus,
+input[type="password"]:focus {border-color:#97bfcf;background:#ecf6fa;transition:all .5s}
+
+/* login */
+.login {position:relative;padding:70px 0 30px;box-sizing:border-box}
+.login .logo {position:relative;width:170px;height:70px;margin:0 auto}
+.login .logo span {position:absolute;top:0;left:0;display:block;font-family:'Fugaz One',cursive;font-size:30px}
+.login .logo span + span {top:30px;left:95px;font-size:36px;color:#39a9d6}
+.login .logo + .form {margin-top:40px}
+.login .join {margin-top:25px;text-align:center;font-size:12px}
+.login .join span {color:#999}
+.login .join a {margin-left:5px;font-weight:700}
+.login .footer {position:absolute;bottom:30px;width:100%;text-align:center;font-family:'Fugaz One';font-size:12px;color:#ccc}
+
+/* form */
+.form ul {padding:0 20px}
+.form ul li {position:relative;width:100%}
+.form ul li + li {margin-top:15px}
+.form ul li input {padding-left:35px}
+.form ul li input + i {position:absolute;top:13px;left:15px;font-size:14px;color:#ccc}
+.form ul li input:focus + i {color:#777}
+.form + .btn {margin-top:25px;padding:0 20px}
+.form + .btn a {display:block;width:100%;line-height:40px;text-align:center;font-size:14px;color:#fff;border-radius:5px;background:#39a9d6}
+
+/* header */
+.wrapper > .header {position:fixed;width:100%;height:50px;background:#39a9d6;z-index:1}
+.wrapper > .header .btn {position:absolute;top:10px;left:15px}
+.wrapper > .header .btn a {display:block;width:30px;height:30px;line-height:30px;text-align:center}
+.wrapper > .header .btn i {font-size:20px;color:#fff}
+.wrapper > .header .btn:last-of-type {left:auto;right:15px}
+.wrapper > .header .title {font-family:'Kanit';line-height:50px;text-align:center;font-size:18px;color:#fff}
+.wrapper > .container {position:relative;width:100%;height:100%;padding:50px 0 60px;box-sizing:border-box}
+
+/* gnb */
+.container > .gnb {position:fixed;bottom:0;width:100%;height:60px;border-top:1px solid #eee;box-sizing:border-box;z-index:1}
+.container > .gnb ul {overflow:hidden}
+.container > .gnb li {float:left;width:25%;padding:10px 15px;text-align:center;box-sizing:border-box}
+.container > .gnb li a {display:block;line-height:39px}
+.container > .gnb li i {font-size:20px;color:#ccc}
+.container > .gnb li a.on i {color:#333}
+
+/* content */
+.content {position:relative;overflow-y:auto;height:100%}
+.content > .form {margin-top:30px}
+.content > .search {position:relative;padding:10px;border-bottom:1px solid #eee}
+.content > .search input[type="text"] {border:0}
+.content > .search input[type="text"]::placeholder {text-align:center}
+.content > .search input[type="text"] + i {position:absolute;top:23px;left:calc(50% - 40px);font-size:14px;color:#ccc}
+.content > .search input[type="text"]:focus::placeholder {color:transparent}
+.content > .search input[type="text"]:focus + i {display:none}
+.content > .list li {overflow:hidden;height:55px;padding:7px 20px;border-bottom:1px solid #eee;box-sizing:border-box}
+.content > .list .user-img {position:relative;float:left;width:40px;height:40px;line-height:40px;text-align:center;border-radius:50%;background:#ccc}
+.content > .list .user-img i {font-size:20px;color:#fff}
+.content > .list .user-img .state {position:absolute;right:0;bottom:0;display:block;width:10px;height:10px;border:2px solid #fff;border-radius:50%;background:#ccc}
+.content > .list .user-img .state.on {background:#39a9d6}
+.content > .list .user-info {float:left;margin-left:10px;padding:2px 0;box-sizing:border-box}
+.content > .list .user-info strong,
+.content > .list .user-info span {display:block}
+.content > .list .user-info strong {line-height:20px;font-size:14px}
+.content > .list .user-info span {line-height:16px;font-size:12px;color:#999}
+.content > .list .checkbox {float:right}
+.content > .list .checkbox input {display:none}
+.content > .list .checkbox input + label {display:block;margin-top:10px}
+.content > .list .checkbox input + label::before {content:'\2714';display:block;width:20px;height:20px;vertical-align:middle;text-align:center;font-size:13px;color:#ccc;border:2px solid #ccc;border-radius:2px;box-sizing:border-box;transition:all .5s}
+.content > .list .checkbox input:checked + label::before {color:#39a9d6;border-color:#39a9d6}
+.content > .button {position:fixed;bottom:60px;width:100%;height:50px}
+.content > .button a {display:block;width:100%;height:100%;line-height:50px;text-align:center;font-family:'Kanit';color:#fff;background:#39a9d6}

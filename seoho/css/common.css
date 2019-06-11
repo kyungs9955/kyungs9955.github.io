@@ -51,10 +51,12 @@ a {
 html,
 body,
 .wrapper {width:100%;height:100%}
-.section {width:100%;height:100%;padding:50px 0;background:url(../images/bg2.jpg) no-repeat center center;box-sizing:border-box}
+
+.bg {position:fixed;width:100%;height:100%;background:url(../images/bg.jpg) no-repeat center center #ffc5c4;background-size:cover}
+.section {position:relative;width:100%;height:100%;padding:50px 0;box-sizing:border-box}
 
 .main .title {position:relative;text-align:center}
-.main .title strong {position:relative;display:block;font-family:'NanumBarunpen';font-weight:bold;font-size:50px;color:rgba(255,255,255,1)}
+.main .title strong {position:relative;display:block;font-family:'NanumBarunpen';font-weight:bold;font-size:50px;color:rgba(255,255,255,1);text-shadow:0 2px 0 rgba(255,164,164,1)}
 .main .title::before {content:'0629';position:absolute;top:50%;display:block;width:100%;font-family:'NanumSquareRound';font-weight:bold;font-size:120px;color:rgba(255,255,255,0.15)}
 .main .character {margin-top:35px;text-align:center}
 .main .character img {height:200px}
@@ -64,8 +66,8 @@ body,
 .main .infomation .address {margin-top:15px;font-size:13px;color:#fff}
 
 .invitation {position:relative}
-.invitation .img {position:absolute;top:0;left:50%;transform:translateX(-50%);overflow:hidden;width:200px;height:200px;margin:0 auto;margin-top:-150px;border-radius:100%;border:6px solid #fff;box-sizing:border-box}
+.invitation .img {position:absolute;top:0;left:50%;transform:translateX(-50%);overflow:hidden;width:200px;height:200px;margin:0 auto;margin-top:-100px;border-radius:100%;border:6px solid #fff;box-sizing:border-box}
 .invitation .img img {width:100%;height:100%}
-.invitation .box {width:340px;margin:0 auto;margin-top:150px;padding:50px;padding-top:80px;text-align:center;background:#8398b8;box-sizing:border-box}
+.invitation .box {width:300px;margin:0 auto;margin-top:100px;padding:130px 20px 50px;text-align:center;background:#fe8090;box-sizing:border-box}
 .invitation .box strong {display:block;font-family:'Monoton';font-size:20px;text-transform:uppercase;color:rgba(255,255,255,0.7)}
-.invitation .box p {margin-top:30px;font-family:'NanumSquareRound';color:#fff}
+.invitation .box p {margin-top:30px;font-family:'NanumSquareRound';font-size:14px;color:#fff}

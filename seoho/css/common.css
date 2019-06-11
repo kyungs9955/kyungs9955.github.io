@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|Noto+Sans+KR&display=swap');
+@import url("https://github.com/gshn/fonts/blob/master/NanumBarunpen/fonts.css");
+@import url("https://github.com/gshn/fonts/blob/master/NanumSquareRound/fonts.css");
+
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 16px;
+	font: inherit;
+	vertical-align: baseline;
+   line-height:1.2em;
+   font-family: 'Noto Sans KR';
+   color:#333
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+   text-decoration: none
+}
+
+html,
+body,
+.wrapper {width:100%;height:100%}
+.section {width:100%;height:100%;padding:100px 0;background:url(../images/bg2.jpg) no-repeat center center;background-size:cover;background-attachment:fixed;box-sizing:border-box}
+
+.title {position:relative;text-align:center}
+.title strong {position:relative;display:block;font-family:'NanumBarunpen';font-weight:bold;font-size:50px;color:rgba(255,255,255,1)}
+.title::before {content:'0629';position:absolute;top:50%;display:block;width:100%;font-family:'NanumSquareRound';font-weight:bold;font-size:120px;color:rgba(255,255,255,0.15)}
+
+.character {margin-top:35px;text-align:center}
+.character img {height:240px}
+
+.infomation {margin-top:35px;text-align:center}
+.infomation .date {font-size:20px;color:#fff}
+.infomation .location {margin-top:15px;color:#fff}
+.infomation .address {margin-top:15px;font-size:13px;color:#fff}
+
+.invitation {position:relative}
+.invitation .img {position:absolute;top:0;left:50%;transform:translateX(-50%);overflow:hidden;width:200px;height:200px;margin:0 auto;margin-top:-150px;border-radius:100%;border:6px solid #fff;box-sizing:border-box}
+.invitation .img img {width:100%;height:100%}
+.invitation .box {width:340px;margin:0 auto;margin-top:150px;padding:50px;padding-top:80px;text-align:center;background:#8398b8;box-sizing:border-box}
+.invitation .box strong {display:block;font-family:'Monoton';font-size:20px;text-transform:uppercase;color:rgba(255,255,255,0.7)}
+.invitation .box p {margin-top:30px;font-family:'NanumSquareRound';color:#fff}

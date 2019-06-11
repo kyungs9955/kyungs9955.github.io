@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'NanumSquareRound';
+    font-style: normal;
+    font-weight: 100;
+    src: local('※'),
+        url('../font/NanumSquareRoundL.woff2') format('woff2'),
+        url('../font/NanumSquareRoundL.woff') format('woff'),
+        url('../font/NanumSquareRoundL.ttf') format('truetype'),
+        url('../font/NanumSquareRoundL.otf') format('opentype'),
+        url('../font/NanumSquareRoundL.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    font-style: normal;
+    font-weight: 400;
+    src: local('※'),
+        url('../font/NanumSquareRoundR.woff2') format('woff2'),
+        url('../font/NanumSquareRoundR.woff') format('woff'),
+        url('../font/NanumSquareRoundR.ttf') format('truetype'),
+        url('../font/NanumSquareRoundR.otf') format('opentype'),
+        url('../font/NanumSquareRoundR.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    font-style: normal;
+    font-weight: 700;
+    src: local('※'),
+        url('../font/NanumSquareRoundB.woff2') format('woff2'),
+        url('../font/NanumSquareRoundB.woff') format('woff'),
+        url('../font/NanumSquareRoundB.ttf') format('truetype'),
+        url('../font/NanumSquareRoundB.otf') format('opentype'),
+        url('../font/NanumSquareRoundB.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    font-style: normal;
+    font-weight: 900;
+    src: local('※'),
+        url('../font/NanumSquareRoundEB.woff2') format('woff2'),
+        url('../font/NanumSquareRoundEB.woff') format('woff'),
+        url('../font/NanumSquareRoundEB.ttf') format('truetype'),
+        url('../font/NanumSquareRoundEB.otf') format('opentype'),
+        url('../font/NanumSquareRoundEB.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'NanumBarunpen';
+    font-style: normal;
+    font-weight: 400;
+    src: local('NanumBarunpen'),
+        url('../font/NanumBarunpenR.woff2') format('woff2'),
+        url('../font/NanumBarunpenR.woff') format('woff'),
+        url('../font/NanumBarunpenR.ttf') format('truetype'),
+        url('../font/NanumBarunpenR.otf') format('opentype'),
+        url('../font/NanumBarunpenR.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'NanumBarunpen';
+    font-style: normal;
+    font-weight: 700;
+    src: local('NanumBarunpen'),
+        url('../font/NanumBarunpenB.woff2') format('woff2'), 
+        url('../font/NanumBarunpenB.woff') format('woff'),
+        url('../font/NanumBarunpenB.ttf') format('truetype'),
+        url('../font/NanumBarunpenB.otf') format('opentype'),
+        url('../font/NanumBarunpenB.eot') format('embedded-opentype');
+}

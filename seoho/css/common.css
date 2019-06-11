@@ -79,28 +79,29 @@ body,
 .invite .invitation {flex:3;position:relative}
 .invite .invitation .img {position:absolute;top:0;left:50%;transform:translateX(-50%);overflow:hidden;width:200px;height:200px;margin:0 auto;border-radius:100%;border:6px solid #fff;box-sizing:border-box}
 .invite .invitation .img img {width:100%;height:100%}
-.invite .invitation .box {width:300px;margin:0 auto;margin-top:100px;padding:130px 20px 50px;text-align:center;background:#fe8090;box-sizing:border-box}
+.invite .invitation .box {width:300px;margin:0 auto;margin-top:100px;padding:130px 10px 30px;text-align:center;background:#fe8090;box-sizing:border-box}
 .invite .invitation .box strong {display:block;font-family:'Monoton';font-size:20px;text-transform:uppercase;color:#ffc5c4}
-.invite .invitation .box p {margin-top:30px;font-family:'NanumSquareRound';font-size:14px;color:#fff}
-.invite .contact {flex:2}
+.invite .invitation .box p {margin-top:20px;font-family:'NanumSquareRound';font-size:12px;color:#fff}
+.invite .contact {flex:1}
 .invite .contact ul {overflow:hidden;width:300px;margin:0 auto;padding:10% 0}
-.invite .contact li {float:left;width:48%;background:#f86969}
-.invite .contact li + li {margin-left:4%;background:#f86969}
-.invite .contact li a {display:block;padding:20px;text-align:center;font-size:12px;color:#fff;box-sizing:border-box}
+.invite .contact li {float:left;width:48%;background:#508dc6;box-sizing:border-box}
+.invite .contact li + li {margin-left:4%;background:#50c6c2}
+.invite .contact li i {display:block;margin:0 auto 5px}
+.invite .contact li a {display:block;padding:10px;text-align:center;font-size:12px;color:#fff;box-sizing:border-box}
 
 .location .map {flex:1;width:100%;text-align:center}
 .location .map iframe {width:100%;height:100%}
-.location .direction {flex:2;background:#fe8090}
-.location .address {text-align:center}
+.location .direction {flex:3;background:#fe8090}
+.location .address {text-align:center;padding-bottom:15%}
 .location .address .tit {margin-bottom:20px;font-family:'Monoton';font-size:30px;color:#ffc5c4}
 .location .address li {font-family:'NanumSquareRound';color:#fff}
-.location .address li + li {margin-top:15px;font-size:14px}
+.location .address li + li {margin-top:15px;font-size:12px}
 .location .address li p {font-weight:bold}
-.location .address li strong {display:block;font-weight:700;font-size:12px;color:#fff}
-.location .address li span {display:block;font-size:14px}
+.location .address li strong {display:block;font-weight:700;font-size:10px;color:#fff}
+.location .address li span {display:block;font-size:12px}
 .location .address li .link {margin-top:5px}
-.location .address li .link a {display:inline-block;width:80px;padding:5px;font-size:12px;border:1px solid rgba(255,255,255,0.3);border-radius:5px;box-sizing:border-box}
+.location .address li .link a {display:inline-block;width:80px;padding:5px;font-size:10px;border:1px solid rgba(255,255,255,0.3);border-radius:5px;box-sizing:border-box}
 .location .address li .link a + a {margin-left:5px}
 .location .address li .link a img,
-.location .address li .link a i {display:block;margin:0 auto 5px}
+.location .address li .link a i {display:block;margin:0 auto 5px;font-size:14px}
 .location .address ul + ul {margin-top:30px;padding-top:30px;border-top:1px solid rgba(255,255,255,0.2)}

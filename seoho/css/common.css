@@ -105,4 +105,3 @@ body,
 .location .address li .link a + a {margin-left:5px}
 .location .address li .link a img,
 .location .address li .link a i {display:block;margin:0 auto;font-size:14px}
-.location .address ul + ul {margin-top:30px;padding-top:30px;border-top:1px solid rgba(255,255,255,0.2)}

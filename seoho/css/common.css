@@ -51,7 +51,7 @@ a {
 html,
 body,
 .wrapper {width:100%;height:100%}
-.section {width:100%;height:100%;padding:10% 0;background:url(../images/bg2.jpg) no-repeat center center;background-attachment:fixed;box-sizing:border-box}
+.section {width:100%;height:100%;padding:50px 0;background:url(../images/bg2.jpg) no-repeat center center;background-attachment:fixed;box-sizing:border-box}
 
 .main .title {position:relative;text-align:center}
 .main .title strong {position:relative;display:block;font-family:'NanumBarunpen';font-weight:bold;font-size:50px;color:rgba(255,255,255,1)}

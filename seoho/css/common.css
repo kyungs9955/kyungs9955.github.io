@@ -83,9 +83,9 @@ body,
 .invite .invitation .box strong {display:block;font-family:'Monoton';font-size:20px;text-transform:uppercase;color:#ffc5c4}
 .invite .invitation .box p {margin-top:20px;font-family:'NanumSquareRound';font-size:12px;color:#fff}
 .invite .contact {margin-top:10px}
-.invite .contact ul {overflow:hidden;width:300px;margin:0 auto;padding:10% 0}
-.invite .contact li {float:left;width:48%;background:#508dc6;box-sizing:border-box}
-.invite .contact li + li {margin-left:4%;background:#50c6c2}
+.invite .contact ul {overflow:hidden;width:300px;margin:0 auto}
+.invite .contact li {float:left;width:48%;background:#fe8090;box-sizing:border-box}
+.invite .contact li + li {margin-left:4%}
 .invite .contact li i {display:block;margin:0 auto 5px}
 .invite .contact li a {display:block;padding:10px;text-align:center;font-size:12px;color:#fff;box-sizing:border-box}
 

@@ -66,7 +66,7 @@ body,
 .main .title strong {position:relative;display:block;font-family:'NanumBarunpen';font-weight:700;font-size:50px;color:rgba(255,255,255,1);text-shadow:0 2px 0 rgba(255,164,164,1)}
 .main .title::before {content:'0629';position:absolute;top:50%;display:block;width:100%;font-family:'NanumSquareRound';font-weight:700;font-size:120px;color:rgba(255,255,255,0.15)}
 .main .character {flex:2}
-.main .character img {height:220px}
+.main .character img {height:200px}
 .main .infomation {flex:1;text-align:center}
 .main .infomation li {color:#fff;text-shadow:0 1px 0 rgba(255,164,164,1)}
 .main .infomation li + li {margin-top:15px}

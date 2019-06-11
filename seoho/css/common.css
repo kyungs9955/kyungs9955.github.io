@@ -53,7 +53,7 @@ body,
 .wrapper {width:100%;height:100%}
 
 .bg {position:fixed;width:100%;height:100%;background:url(../images/bg.jpg) no-repeat center center #ffc5c4;background-size:100% auto}
-.section {display:flex;flex-direction:column;position:relative;width:100%;height:100%;box-sizing:border-box}
+.section {position:relative;width:100%;height:100%;box-sizing:border-box}
 
 .main,
 .invite {padding:15% 0}
@@ -62,12 +62,12 @@ body,
 .main .character,
 .location .direction {display:flex;align-items:center;justify-content:center}
 
-.main .title {flex:1;position:relative;text-align:center}
+.main .title {position:relative;height:30%;text-align:center}
 .main .title strong {position:relative;display:block;font-family:'NanumBarunpen';font-weight:700;font-size:50px;color:rgba(255,255,255,1);text-shadow:0 2px 0 rgba(255,164,164,1)}
 .main .title::before {content:'0629';position:absolute;top:50%;display:block;width:100%;font-family:'NanumSquareRound';font-weight:700;font-size:120px;color:rgba(255,255,255,0.15)}
-.main .character {flex:2}
+.main .character {height:40%;}
 .main .character img {height:200px}
-.main .infomation {flex:1;text-align:center}
+.main .infomation {height:30%;text-align:center}
 .main .infomation li {color:#fff;text-shadow:0 1px 0 rgba(255,164,164,1)}
 .main .infomation li + li {margin-top:15px}
 .main .infomation li:nth-child(1) {font-size:20px}
@@ -76,8 +76,8 @@ body,
 .main .infomation li:nth-child(3) a {display:block;color:#fff}
 .main .infomation li:nth-child(3) a + a {margin-top:2px;font-family:'Exo 2'}
 
-.invite .invitation {flex:1;position:relative}
-.invite .invitation .img {position:absolute;top:0;left:50%;transform:translateX(-50%);overflow:hidden;width:200px;height:200px;margin:0 auto;border-radius:100%;border:6px solid #fff;box-sizing:border-box}
+.invite .invitation {position:relative}
+.invite .invitation .img {position:absolute;top:0;left:50%;transform:translateX(-50%);overflow:hidden;width:200px;height:200px;margin:0 auto;margin-top:-100px;border-radius:100%;border:6px solid #fff;box-sizing:border-box}
 .invite .invitation .img img {width:100%;height:100%}
 .invite .invitation .box {width:300px;margin:0 auto;margin-top:100px;padding:130px 10px 30px;text-align:center;background:#fe8090;box-sizing:border-box}
 .invite .invitation .box strong {display:block;font-family:'Monoton';font-size:20px;text-transform:uppercase;color:#ffc5c4}
@@ -90,9 +90,9 @@ body,
 .invite .contact li a {display:block;padding:10px;text-align:center;font-size:12px;color:#fff;box-sizing:border-box}
 
 .location {background:#fe8090}
-.location .map {flex:1;width:100%;text-align:center}
+.location .map {width:100%;height:30%;text-align:center}
 .location .map iframe {width:100%;height:100%}
-.location .direction {flex:3}
+.location .direction {height:70%}
 .location .address {text-align:center}
 .location .address .tit {margin-bottom:20px;font-family:'Monoton';font-size:30px;color:#ffc5c4}
 .location .address li {font-family:'NanumSquareRound';color:#fff}

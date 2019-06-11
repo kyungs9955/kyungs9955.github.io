@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Monoton|Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Monoton|Noto+Sans+KR&display=swap');
 @import url("fonts.css");
 
 /* reset */
@@ -52,7 +52,7 @@ html,
 body,
 .wrapper {width:100%;height:100%}
 
-.bg {position:fixed;width:100%;height:100%;background:url(../images/bg.jpg) no-repeat center center #ffc5c4;background-size:cover}
+.bg {position:fixed;width:100%;height:100%;background:url(../images/bg.jpg) no-repeat center center #ffc5c4;background-size:100% 100%}
 .section {display:flex;flex-direction:column;position:relative;width:100%;height:100%;padding:15% 0;box-sizing:border-box}
 
 .main .title,
@@ -62,18 +62,20 @@ body,
 .main .title strong {position:relative;display:block;font-family:'NanumBarunpen';font-weight:bold;font-size:50px;color:rgba(255,255,255,1);text-shadow:0 2px 0 rgba(255,164,164,1)}
 .main .title::before {content:'0629';position:absolute;top:50%;display:block;width:100%;font-family:'NanumSquareRound';font-weight:bold;font-size:120px;color:rgba(255,255,255,0.15)}
 .main .character {flex:2}
-.main .character img {height:200px}
+.main .character img {height:250px}
 .main .infomation {flex:1;text-align:center}
 .main .infomation li {color:#fff;text-shadow:0 2px 0 rgba(255,164,164,1)}
 .main .infomation li + li {margin-top:15px}
-.main .infomation li a {display:block;color:#fff}
-.main .infomation li a + a {margin-top:2px}
 .main .infomation li:nth-child(1) {font-size:20px}
+.main .infomation li:nth-child(2) span:first-child {display:block;margin-bottom:2px;font-family:'Exo 2';font-size:19px;color:#fff}
 .main .infomation li:nth-child(3) {font-size:14px}
+.main .infomation li:nth-child(3) a {display:block;color:#fff}
+.main .infomation li:nth-child(3) a + a {margin-top:2px;font-family:'Exo 2'}
 
-.invitation {position:relative}
-.invitation .img {position:absolute;top:0;left:50%;transform:translateX(-50%);overflow:hidden;width:200px;height:200px;margin:0 auto;border-radius:100%;border:6px solid #fff;box-sizing:border-box}
-.invitation .img img {width:100%;height:100%}
-.invitation .box {width:300px;margin:0 auto;margin-top:100px;padding:130px 20px 50px;text-align:center;background:#fe8090;box-sizing:border-box}
-.invitation .box strong {display:block;font-family:'Monoton';font-size:20px;text-transform:uppercase;color:rgba(255,255,255,0.7)}
-.invitation .box p {margin-top:30px;font-family:'NanumSquareRound';font-size:14px;color:#fff}
+.invite .invitation {flex:3;position:relative}
+.invite .invitation .img {position:absolute;top:0;left:50%;transform:translateX(-50%);overflow:hidden;width:200px;height:200px;margin:0 auto;border-radius:100%;border:6px solid #fff;box-sizing:border-box}
+.invite .invitation .img img {width:100%;height:100%}
+.invite .invitation .box {width:300px;margin:0 auto;margin-top:100px;padding:130px 20px 50px;text-align:center;background:#fe8090;box-sizing:border-box}
+.invite .invitation .box strong {display:block;font-family:'Monoton';font-size:20px;text-transform:uppercase;color:rgba(255,255,255,0.7)}
+.invite .invitation .box p {margin-top:30px;font-family:'NanumSquareRound';font-size:14px;color:#fff}
+.invite .contact {}

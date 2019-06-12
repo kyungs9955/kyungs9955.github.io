@@ -55,7 +55,7 @@ body,
 .bg {position:fixed;width:100%;height:100%;background:url(../images/bg.jpg) no-repeat center center #ffc5c4;background-size:100% auto}
 .section {position:relative;padding:0}
 .section + .section {margin-top:200px}
-.tit {display:block;text-align:center;font-family:'Monoton';font-size:20px;text-transform:uppercase;color:#fff}
+.tit {display:block;margin-bottom:30px;text-align:center;font-family:'Monoton';font-size:20px;text-transform:uppercase;color:#fff}
 
 .main {display:flex;flex-direction:column;width:100%;height:100%;padding:5% 0;box-sizing:border-box}
 .main .title,
@@ -64,7 +64,7 @@ body,
 
 .main .title {position:relative;height:30%;text-align:center}
 .main .title strong {position:relative;display:block;font-family:'NanumBarunpen';font-weight:700;font-size:50px;color:rgba(255,255,255,1);text-shadow:0 2px 0 rgba(255,164,164,1)}
-.main .title::before {content:'0629';position:absolute;top:50%;display:block;width:100%;font-family:'NanumSquareRound';font-weight:700;font-size:120px;color:rgba(255,255,255,0.15)}
+.main .title::before {content:'0629';position:absolute;top:50%;display:block;width:100%;font-weight:700;font-size:120px;color:rgba(255,255,255,0.15)}
 .main .character {height:40%;}
 .main .character img {height:200px}
 .main .infomation {height:30%;text-align:center}
@@ -78,7 +78,7 @@ body,
 .invite .img {overflow:hidden;width:200px;height:200px;margin:0 auto;border-radius:100%;border:6px solid #fe8090	;box-sizing:border-box}
 .invite .img img {width:100%;height:100%}
 .invite .box {width:300px;margin:0 auto;margin-top:-100px;padding:130px 10px 30px;text-align:center;background:#fe8090;box-sizing:border-box}
-.invite .box p {margin-top:20px;font-family:'NanumSquareRound';font-size:12px;color:#fff}
+.invite .box p {font-size:12px;color:#fff}
 .invite .contact {margin-top:10px}
 .invite .contact ul {overflow:hidden;width:300px;margin:0 auto}
 .invite .contact li {float:left;width:48%;background:#fe8090;box-sizing:border-box}
@@ -91,14 +91,14 @@ body,
 .photo li {overflow:hidden;float:left;width:100px;height:100px;margin-bottom:10px;border:3px solid #fff;box-sizing:border-box}
 .photo li + li {margin-left:10px}
 .photo li:nth-child(3n+1) {margin-left:0}
+.photo li .material-placeholder {width:100%;height:100%}
 .photo li img {width:100%;height:100%;object-fit:cover}
 
 .location {background:#fe8090}
 .location .map {width:100%;height:300px;text-align:center}
 .location .map iframe {width:100%;height:100%}
 .location .address {padding:100px 0;text-align:center}
-.location .address .tit {margin-bottom:50px}
-.location .address li {font-family:'NanumSquareRound';color:#fff}
+.location .address li {color:#fff}
 .location .address li + li {margin-top:20px;font-size:14px}
 .location .address li p {font-weight:bold}
 .location .address li strong {display:block;margin-bottom:2px;font-weight:700;font-size:10px;color:#fff}

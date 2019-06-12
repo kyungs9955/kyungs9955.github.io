@@ -53,14 +53,12 @@ body,
 .wrapper {width:100%;height:100%}
 
 .bg {position:fixed;width:100%;height:100%;background:url(../images/bg.jpg) no-repeat center center #ffc5c4;background-size:100% auto}
-.section {display:flex;flex-direction:column;position:relative;width:100%;height:100%;box-sizing:border-box}
+.section {position:relative}
+.section + .section {margin-top:100px}
 
-.main,
-.invite {padding:15% 0}
-
+.main {display:flex;flex-direction:column;width:100%;height:100%;padding:10% 0;box-sizing:border-box}
 .main .title,
-.main .character,
-.location .direction {display:flex;align-items:center;justify-content:center}
+.main .character {display:flex;align-items:center;justify-content:center}
 
 .main .title {position:relative;height:30%;text-align:center}
 .main .title strong {position:relative;display:block;font-family:'NanumBarunpen';font-weight:700;font-size:50px;color:rgba(255,255,255,1);text-shadow:0 2px 0 rgba(255,164,164,1)}
@@ -80,7 +78,7 @@ body,
 .invite .invitation .img {position:absolute;top:0;left:50%;transform:translateX(-50%);overflow:hidden;width:200px;height:200px;margin:0 auto;margin-top:-100px;border-radius:100%;border:6px solid #fff;box-sizing:border-box}
 .invite .invitation .img img {width:100%;height:100%}
 .invite .invitation .box {width:300px;margin:0 auto;margin-top:100px;padding:130px 10px 30px;text-align:center;background:#fe8090;box-sizing:border-box}
-.invite .invitation .box strong {display:block;font-family:'Monoton';font-size:20px;text-transform:uppercase;color:#ffc5c4}
+.invite .invitation .box strong {display:block;font-family:'Monoton';font-size:20px;text-transform:uppercase;color:#fff}
 .invite .invitation .box p {margin-top:20px;font-family:'NanumSquareRound';font-size:12px;color:#fff}
 .invite .contact {margin-top:10px}
 .invite .contact ul {overflow:hidden;width:300px;margin:0 auto}
@@ -90,16 +88,17 @@ body,
 .invite .contact li a {display:block;padding:10px;text-align:center;font-size:12px;color:#fff;box-sizing:border-box}
 
 .location {background:#fe8090}
-.location .map {width:100%;height:30%;text-align:center}
+.location .map {width:100%;height:300px;text-align:center}
 .location .map iframe {width:100%;height:100%}
-.location .direction {height:70%}
-.location .address {text-align:center}
-.location .address .tit {margin-bottom:20px;font-family:'Monoton';font-size:30px;color:#fff}
+.location .address {padding:100px 0;text-align:center}
+.location .address .tit {margin-bottom:50px;font-family:'Monoton';font-size:20px;color:#fff}
 .location .address li {font-family:'NanumSquareRound';color:#fff}
-.location .address li + li {margin-top:15px;font-size:12px}
+.location .address li + li {margin-top:20px;font-size:14px}
 .location .address li p {font-weight:bold}
-.location .address li strong {display:block;font-weight:700;font-size:10px;color:#fff}
-.location .address li span {display:block;font-size:12px}
+.location .address li strong {display:block;margin-bottom:5px;font-weight:700;font-size:10px;color:#fff}
+.location .address li span {display:block;font-size:14px}
+.location .address li span + span {margin-top:2px}
+.location .address li .line {display:inline-block;padding:1px 4px;font-size:9px;border:1px solid rgba(255,255,255,0.7);border-radius:20px}
 .location .address li .link {margin-top:5px}
 .location .address li .link a {display:inline-block;width:60px;padding:5px;font-size:10px;border:1px solid rgba(255,255,255,0.3);border-radius:5px;box-sizing:border-box}
 .location .address li .link a + a {margin-left:5px}

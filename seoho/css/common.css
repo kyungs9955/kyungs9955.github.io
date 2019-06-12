@@ -70,8 +70,8 @@ body,
 .main .infomation {height:30%;text-align:center}
 .main .infomation li {color:#fff;text-shadow:0 1px 0 rgba(255,164,164,1)}
 .main .infomation li + li {margin-top:15px}
-.main .infomation li:nth-child(3) {font-size:12px}
-.main .infomation li span {margin-left:10px}
+.main .infomation li:nth-child(3) {font-size:14px}
+.main .infomation li span {display:inline-block;margin-left:10px}
 .main .infomation li strong {font-weight:bold}
 
 .invite {position:relative}

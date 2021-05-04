@@ -208,10 +208,6 @@
 .table table {width:100%}
 .table table th,
 .table table td {padding:16px 10px;font-size:1.5rem;border-bottom:1px solid #e6e6e6}
-.table > ul {display:table;width:100%}
-.table > ul > li.thead span {font-weight:500;font-size:1.5rem;background:#f7f7f7;border-top:1px solid #999}
-.table > ul > li {display:table-row;text-align:center}
-.table > ul > li span {display:table-cell;padding:16px 10px;font-size:1.5rem;border-bottom:1px solid #e6e6e6}
 
 .subContent {padding:70px 0 100px}
 .subContent h2 {margin-bottom:40px;font-weight:500;font-size:2.6rem}
@@ -299,7 +295,7 @@
 .subContainer.plan .planList.plan > ul > li > .info > li.date::before {background-position-x:-160px}
 .subContainer.plan .planList.plan > ul > li > .info > li.graph::before {background-position-x:-200px}
 .subContainer.plan .planList.plan > ul > li > .info > li.phone::before {background-position-x:-240px}
-.subContainer.plan .planList.plan > ul > li > .info > li.message::before {background-position-x:280px}
+.subContainer.plan .planList.plan > ul > li > .info > li.message::before {background-position-x:-280px}
 .subContainer.plan .planList.sale > ul > li {padding:15px 0}
 .subContainer.plan .planList.sale > ul > li > .info > li strong,
 .subContainer.plan .planList.sale > ul > li > .info > li span {display:flex;align-items:center;justify-content:center;height:60px;padding:0 20px;box-sizing:border-box}

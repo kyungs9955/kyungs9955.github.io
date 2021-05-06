@@ -2,8 +2,7 @@ $(document).ready(function () {
 
 
    //gnb
-   var $wrapper = $('.wrapper'),
-       $header = $('.header'),
+   var $header = $('.header'),
        $gnbMenuButton = $('.menuButton')
        $gnbMenuContainer = $(".gnbMenuContainer"),
        $gnbMenuList = $(".gnb .depth1 > li > strong"),
@@ -18,7 +17,7 @@ $(document).ready(function () {
       }
    });
 
-   // window size
+   //window size
    $(window).on('resize', function () {
       $header.removeClass('pc mobile open');
       $gnbMenuContent.removeAttr('style');
@@ -83,7 +82,8 @@ $(document).ready(function () {
       $(this).parent().next($showcaseListContent).slideToggle(300);
    });
 
-   //compare floating
+   
+   //showcase compare floating
    $(window).scroll(function() {
       if($(window).scrollTop() + $(window).height() > $(document).height() - $(".footer").height()) {
          $(".compareContainer").css('position','absolute').css('bottom',$(".footer").height())
@@ -92,6 +92,22 @@ $(document).ready(function () {
          $(".compareContainer").css('position','fixed').css('bottom','0')
       }
    });
+
+
+   //guide
+   var $guideList = $(".guideList > ul > li");
+       $guideListButton = $(".guideContainer .guideList .title");
+       $guideListContent = $(".guideContainer .guideList .title + ul");
+
+   $guideListButton.click(function () {
+      $guideList.removeClass('active')
+      $(this).parent($guideList).addClass('active');
+
+      $guideListContent.hide();
+      $(this).siblings($guideListContent).slideToggle();
+   });
+
+
    
 
    //faq
@@ -102,12 +118,7 @@ $(document).ready(function () {
    });
 
 
-
-
-   
-
-
-   //slider
+   //slider (main)
    $('.mainVisual .slick-slider').slick({
       autoplay: true,
       infinite: false,
@@ -168,6 +179,8 @@ $(document).ready(function () {
       arrows: true,
       dots: false,
    });
+
+   //slider (showcase)
    $('.subContainer.showcase .showcaseImage .slick-slider').slick({
       autoplay: false,
       infinite: false,

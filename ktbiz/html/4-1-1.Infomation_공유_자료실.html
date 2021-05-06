@@ -83,7 +83,7 @@
                            </ul>
                         </div>
                      </li>
-                     <li class="active">
+                     <li>
                         <strong>Showcase</strong>
                         <div class="menuContent">
                            <ul class="depth2 inner">
@@ -114,7 +114,7 @@
                                        <a href="">NB-IoT</a>
                                     </li>
                                     <li>
-                                       <a href="" class="on">eMTC</a>
+                                       <a href="">eMTC</a>
                                     </li>
                                     <li>
                                        <a href="">LTE-M</a>
@@ -179,7 +179,7 @@
                            </ul>
                         </div>
                      </li>
-                     <li>
+                     <li class="active">
                         <strong>Information</strong>
                         <div class="menuContent">
                            <ul class="depth2 inner">
@@ -187,7 +187,7 @@
                                  <a href="">공유</a>
                                  <ul class="depth3">
                                     <li>
-                                       <a href="">자료실</a>
+                                       <a href="" class="on">자료실</a>
                                     </li>
                                     <li>
                                        <a href="">공지사항</a>
@@ -205,87 +205,78 @@
             </div>
          </div>
       </header>
-      <main class="subContainer showcase">
+      <main class="subContainer information">
          <div class="subVisual">
             <div class="inner">
                <div class="location">
                   <span>Home</span>
-                  <span>Showcase</span>
-                  <span>단말</span>
+                  <span>Information</span>
+                  <span>공유</span>
+                  <span>자료실</span>
                </div>
-               <h1>단말</h1>
+               <h1>공유</h1>
             </div>
          </div>
          <div class="subContent">
+            <div class="subMenu">
+               <ul>
+                  <li>
+                     <a href="" class="on">자료실</a>
+                  </li>
+                  <li>
+                     <a href="">공지사항</a>
+                  </li>
+                  <li>
+                     <a href="">FAQ</a>
+                  </li>
+               </ul>
+            </div>
             <div class="searchContainer">
                <div class="inner">
                   <aside class="search">
                      <div class="searchTitle">
-                        <strong>Filter</strong>
+                        <strong>Search</strong>
                         <button>버튼</button>
                      </div>
                      <div class="searchContent">
                         <ul>
                            <li>
-                              <strong>단말 모델명</strong>
+                              <strong>제목</strong>
                               <div class="input">
-                                 <label for="input">단말 모델명</label>
-                                 <input type="text" id="input" placeholder="단말 모델명을 입력하세요.">
+                                 <label for="input">제목</label>
+                                 <input type="text" id="input" placeholder="제목을 입력하세요.">
                               </div>
                            </li>
                            <li>
-                              <strong>통신망</strong>
+                              <strong>작성자</strong>
+                              <div class="input">
+                                 <label for="input">작성자</label>
+                                 <input type="text" id="input" placeholder="작성자를 입력하세요.">
+                              </div>
+                           </li>
+                           <li>
+                              <strong>구분</strong>
                               <div class="select">
                                  <select id="select" required>
-                                    <option value="">통신망을 선택하세요.</option>
+                                    <option value="">구분을 선택하세요.</option>
                                     <option value="">전체</option>
                                  </select>
-                                 <label for="select">통신망</label>
+                                 <label for="select">구분</label>
                               </div> 
                            </li>
                            <li>
-                              <strong>단말 제조사</strong>
-                              <div class="select">
-                                 <select id="select" required>
-                                    <option value="">단말 제조사를 선택하세요.</option>
-                                    <option value="">전체</option>
-                                 </select>
-                                 <label for="select">단말 제조사</label>
+                              <strong>등록기간</strong>
+                              <div class="input calendar">
+                                 <input type="text" id="input" placeholder="등록기간을 입력하세요.">
+                                 <label for="input">등록기간</label>
                               </div>
-                           </li>
-                           <li>
-                              <strong>모듈 제조사</strong>
-                              <div class="select">
-                                 <select id="select" required>
-                                    <option value="">모듈 제조사를 선택하세요.</option>
-                                    <option value="">전체</option>
-                                 </select>
-                                 <label for="select">모듈 제조사</label>
-                              </div> 
-                           </li>
-                           <li>
-                              <strong>모뎀명</strong>
-                              <div class="select">
-                                 <select id="select" required>
-                                    <option value="">모뎀명을 선택하세요.</option>
-                                    <option value="">전체</option>
-                                 </select>
-                                 <label for="select">모뎀명</label>
-                              </div>
-                           </li>
-                           <li>
-                              <strong>Interface</strong>
-                              <div class="select">
-                                 <select id="select" required>
-                                    <option value="">Interface를 선택하세요.</option>
-                                    <option value="">전체</option>
-                                 </select>
-                                 <label for="select">Interface</label>
+                              <div class="input calendar">
+                                 <input type="text" id="input" placeholder="등록기간을 입력하세요.">
+                                 <label for="input">등록기간</label>
                               </div>
                            </li>
                         </ul>
-                        <button class="submit">적용</button>
-                        <button class="clear">Clear filters</button>
+                        <button class="submit">검색</button>
                      </div>
                   </aside>
                   <section class="section">

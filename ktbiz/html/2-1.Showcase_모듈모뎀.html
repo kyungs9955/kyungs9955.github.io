@@ -4,7 +4,7 @@
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="description" content="">
-   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <meta name="viewport" content="width=device-width">
    <title>KT IoT Biz</title>
    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
    <script type="text/javascript" src="js/slick.js"></script>
@@ -217,519 +217,521 @@
             </div>
          </div>
          <div class="subContent">
-            <div class="inner">
-               <aside class="search">
-                  <div class="searchTitle">
-                     <strong>Filter</strong>
-                     <button>버튼</button>
-                  </div>
-                  <div class="searchContent">
-                     <ul>
-                        <li>
-                           <strong>모듈/모델명</strong>
-                           <div class="input">
-                              <label for="input">모듈/모델명</label>
-                              <input type="text" id="input" placeholder="모듈/모델명을 입력하세요.">
-                           </div>
-                        </li>
-                        <li>
-                           <strong>통신망</strong>
-                           <div class="select">
-                              <select id="select" required>
-                                 <option value="">통신망을 선택하세요.</option>
-                                 <option value="">전체</option>
-                              </select>
-                              <label for="select">통신망</label>
-                           </div> 
-                        </li>
-                        <li>
-                           <strong>모뎀 제조사</strong>
-                           <div class="select">
-                              <select id="select" required>
-                                 <option value="">모뎀 제조사를 선택하세요.</option>
-                                 <option value="">전체</option>
-                              </select>
-                              <label for="select">모뎀 제조사</label>
-                           </div>
-                        </li>
-                        <li>
-                           <strong>칩셋 제조사</strong>
-                           <div class="select">
-                              <select id="select" required>
-                                 <option value="">칩셋 제조사를 선택하세요.</option>
-                                 <option value="">전체</option>
-                              </select>
-                              <label for="select">칩셋 제조사</label>
-                           </div> 
-                        </li>
-                        <li>
-                           <strong>칩셋명</strong>
-                           <div class="select">
-                              <select id="select" required>
-                                 <option value="">칩셋명을 선택하세요.</option>
-                                 <option value="">전체</option>
-                              </select>
-                              <label for="select">칩셋명</label>
-                           </div>
-                        </li>
-                     </ul>
-                     <button class="submit">적용</button>
-                     <button class="clear">Clear filters</button>
-                  </div>
-               </aside>
-               <section class="section">
-                  <div class="tabMenu">
-                     <ul>
-                        <li>
-                           <a href="">NB-IoT</a>
-                        </li>
-                        <li>
-                           <!-- [i] 선택한 tab on -->
-                           <a href="" class="on">eMTC</a>
-                        </li>
-                        <li>
-                           <a href="">LTE-M</a>
-                        </li>
-                        <li>
-                           <a href="">LTE</a>
-                        </li>
-                        <li>
-                           <a href="">5G</a>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="tabContent">
-                     <ul>
-                        <li>
-                           <div class="item">
-                              <div class="img">
-                                 <img src="images/sample/img_showcase_01.png" alt="PM-L410K">
-                              </div>
-                              <div class="tit">
-                                 <strong>PM-L410K</strong>
-                                 <a href="#">제조사 홈</a>
-                              </div>
-                              <div class="info">
-                                 <ul>
-                                    <li>
-                                       <strong>종류</strong>
-                                       <sapn>모듈</sapn>
-                                    </li>
-                                    <li>
-                                       <strong>통신망</strong>
-                                       <span>LTE-M</span>
-                                    </li>
-                                    <li>
-                                       <strong>모뎀 제조사</strong>
-                                       <span>팬텍</span>
-                                    </li>
-                                    <li>
-                                       <strong>칩셋 제조사</strong>
-                                       <span>퀄컴</span>
-                                    </li>
-                                    <li>
-                                       <strong>칩셋명</strong>
-                                       <span>MDM9207</span>
-                                    </li>
-                                    <li>
-                                       <strong>Category</strong>
-                                       <span>Cat.1</span>
-                                    </li>
-                                 </ul>
-                              </div>
-                              <div class="det">
-                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox">
-                                    <label for="checkbox">비교하기</label>
-                                 </div>
-                                 <button>상세보기</button>
-                              </div>
-                           </div>
-                        </li>
-                        <li>
-                           <div class="item">
-                              <div class="img">
-                                 <img src="images/sample/img_showcase_01.png" alt="PM-L410K">
-                              </div>
-                              <div class="tit">
-                                 <strong>PM-L410K</strong>
-                                 <a href="#">제조사 홈</a>
-                              </div>
-                              <div class="info">
-                                 <ul>
-                                    <li>
-                                       <strong>종류</strong>
-                                       <sapn>모듈</sapn>
-                                    </li>
-                                    <li>
-                                       <strong>통신망</strong>
-                                       <span>LTE-M</span>
-                                    </li>
-                                    <li>
-                                       <strong>모뎀 제조사</strong>
-                                       <span>팬텍</span>
-                                    </li>
-                                    <li>
-                                       <strong>칩셋 제조사</strong>
-                                       <span>퀄컴</span>
-                                    </li>
-                                    <li>
-                                       <strong>칩셋명</strong>
-                                       <span>MDM9207</span>
-                                    </li>
-                                    <li>
-                                       <strong>Category</strong>
-                                       <span>Cat.1</span>
-                                    </li>
-                                 </ul>
-                              </div>
-                              <div class="det">
-                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox">
-                                    <label for="checkbox">비교하기</label>
-                                 </div>
-                                 <button>상세보기</button>
-                              </div>
-                           </div>
-                        </li>
-                        <li>
-                           <div class="item">
-                              <div class="img">
-                                 <img src="images/sample/img_showcase_01.png" alt="PM-L410K">
-                              </div>
-                              <div class="tit">
-                                 <strong>PM-L410K</strong>
-                                 <a href="#">제조사 홈</a>
-                              </div>
-                              <div class="info">
-                                 <ul>
-                                    <li>
-                                       <strong>종류</strong>
-                                       <sapn>모듈</sapn>
-                                    </li>
-                                    <li>
-                                       <strong>통신망</strong>
-                                       <span>LTE-M</span>
-                                    </li>
-                                    <li>
-                                       <strong>모뎀 제조사</strong>
-                                       <span>팬텍</span>
-                                    </li>
-                                    <li>
-                                       <strong>칩셋 제조사</strong>
-                                       <span>퀄컴</span>
-                                    </li>
-                                    <li>
-                                       <strong>칩셋명</strong>
-                                       <span>MDM9207</span>
-                                    </li>
-                                    <li>
-                                       <strong>Category</strong>
-                                       <span>Cat.1</span>
-                                    </li>
-                                 </ul>
-                              </div>
-                              <div class="det">
-                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox">
-                                    <label for="checkbox">비교하기</label>
-                                 </div>
-                                 <button>상세보기</button>
-                              </div>
-                           </div>
-                        </li>
-                        <li>
-                           <div class="item">
-                              <div class="img">
-                                 <img src="images/sample/img_showcase_01.png" alt="PM-L410K">
-                              </div>
-                              <div class="tit">
-                                 <strong>PM-L410K</strong>
-                                 <a href="#">제조사 홈</a>
-                              </div>
-                              <div class="info">
-                                 <ul>
-                                    <li>
-                                       <strong>종류</strong>
-                                       <sapn>모듈</sapn>
-                                    </li>
-                                    <li>
-                                       <strong>통신망</strong>
-                                       <span>LTE-M</span>
-                                    </li>
-                                    <li>
-                                       <strong>모뎀 제조사</strong>
-                                       <span>팬텍</span>
-                                    </li>
-                                    <li>
-                                       <strong>칩셋 제조사</strong>
-                                       <span>퀄컴</span>
-                                    </li>
-                                    <li>
-                                       <strong>칩셋명</strong>
-                                       <span>MDM9207</span>
-                                    </li>
-                                    <li>
-                                       <strong>Category</strong>
-                                       <span>Cat.1</span>
-                                    </li>
-                                 </ul>
-                              </div>
-                              <div class="det">
-                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox">
-                                    <label for="checkbox">비교하기</label>
-                                 </div>
-                                 <button>상세보기</button>
-                              </div>
-                           </div>
-                        </li>
-                        <li>
-                           <div class="item">
-                              <div class="img">
-                                 <img src="images/sample/img_showcase_01.png" alt="PM-L410K">
-                              </div>
-                              <div class="tit">
-                                 <strong>PM-L410K</strong>
-                                 <a href="#">제조사 홈</a>
-                              </div>
-                              <div class="info">
-                                 <ul>
-                                    <li>
-                                       <strong>종류</strong>
-                                       <sapn>모듈</sapn>
-                                    </li>
-                                    <li>
-                                       <strong>통신망</strong>
-                                       <span>LTE-M</span>
-                                    </li>
-                                    <li>
-                                       <strong>모뎀 제조사</strong>
-                                       <span>팬텍</span>
-                                    </li>
-                                    <li>
-                                       <strong>칩셋 제조사</strong>
-                                       <span>퀄컴</span>
-                                    </li>
-                                    <li>
-                                       <strong>칩셋명</strong>
-                                       <span>MDM9207</span>
-                                    </li>
-                                    <li>
-                                       <strong>Category</strong>
-                                       <span>Cat.1</span>
-                                    </li>
-                                 </ul>
-                              </div>
-                              <div class="det">
-                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox">
-                                    <label for="checkbox">비교하기</label>
-                                 </div>
-                                 <button>상세보기</button>
-                              </div>
-                           </div>
-                        </li>
-                        <li>
-                           <div class="item">
-                              <div class="img">
-                                 <img src="images/sample/img_showcase_01.png" alt="PM-L410K">
-                              </div>
-                              <div class="tit">
-                                 <strong>PM-L410K</strong>
-                                 <a href="#">제조사 홈</a>
-                              </div>
-                              <div class="info">
-                                 <ul>
-                                    <li>
-                                       <strong>종류</strong>
-                                       <sapn>모듈</sapn>
-                                    </li>
-                                    <li>
-                                       <strong>통신망</strong>
-                                       <span>LTE-M</span>
-                                    </li>
-                                    <li>
-                                       <strong>모뎀 제조사</strong>
-                                       <span>팬텍</span>
-                                    </li>
-                                    <li>
-                                       <strong>칩셋 제조사</strong>
-                                       <span>퀄컴</span>
-                                    </li>
-                                    <li>
-                                       <strong>칩셋명</strong>
-                                       <span>MDM9207</span>
-                                    </li>
-                                    <li>
-                                       <strong>Category</strong>
-                                       <span>Cat.1</span>
-                                    </li>
-                                 </ul>
-                              </div>
-                              <div class="det">
-                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox">
-                                    <label for="checkbox">비교하기</label>
-                                 </div>
-                                 <button>상세보기</button>
-                              </div>
-                           </div>
-                        </li>
-                        <li>
-                           <div class="item">
-                              <div class="img">
-                                 <img src="images/sample/img_showcase_01.png" alt="PM-L410K">
-                              </div>
-                              <div class="tit">
-                                 <strong>PM-L410K</strong>
-                                 <a href="#">제조사 홈</a>
-                              </div>
-                              <div class="info">
-                                 <ul>
-                                    <li>
-                                       <strong>종류</strong>
-                                       <sapn>모듈</sapn>
-                                    </li>
-                                    <li>
-                                       <strong>통신망</strong>
-                                       <span>LTE-M</span>
-                                    </li>
-                                    <li>
-                                       <strong>모뎀 제조사</strong>
-                                       <span>팬텍</span>
-                                    </li>
-                                    <li>
-                                       <strong>칩셋 제조사</strong>
-                                       <span>퀄컴</span>
-                                    </li>
-                                    <li>
-                                       <strong>칩셋명</strong>
-                                       <span>MDM9207</span>
-                                    </li>
-                                    <li>
-                                       <strong>Category</strong>
-                                       <span>Cat.1</span>
-                                    </li>
-                                 </ul>
-                              </div>
-                              <div class="det">
-                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox">
-                                    <label for="checkbox">비교하기</label>
-                                 </div>
-                                 <button>상세보기</button>
-                              </div>
-                           </div>
-                        </li>
-                        <li>
-                           <div class="item">
-                              <div class="img">
-                                 <img src="images/sample/img_showcase_01.png" alt="PM-L410K">
-                              </div>
-                              <div class="tit">
-                                 <strong>PM-L410K</strong>
-                                 <a href="#">제조사 홈</a>
-                              </div>
-                              <div class="info">
-                                 <ul>
-                                    <li>
-                                       <strong>종류</strong>
-                                       <sapn>모듈</sapn>
-                                    </li>
-                                    <li>
-                                       <strong>통신망</strong>
-                                       <span>LTE-M</span>
-                                    </li>
-                                    <li>
-                                       <strong>모뎀 제조사</strong>
-                                       <span>팬텍</span>
-                                    </li>
-                                    <li>
-                                       <strong>칩셋 제조사</strong>
-                                       <span>퀄컴</span>
-                                    </li>
-                                    <li>
-                                       <strong>칩셋명</strong>
-                                       <span>MDM9207</span>
-                                    </li>
-                                    <li>
-                                       <strong>Category</strong>
-                                       <span>Cat.1</span>
-                                    </li>
-                                 </ul>
-                              </div>
-                              <div class="det">
-                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox">
-                                    <label for="checkbox">비교하기</label>
-                                 </div>
-                                 <button>상세보기</button>
-                              </div>
-                           </div>
-                        </li>
-                        <li>
-                           <div class="item">
-                              <div class="img">
-                                 <img src="images/sample/img_showcase_01.png" alt="PM-L410K">
-                              </div>
-                              <div class="tit">
-                                 <strong>PM-L410K</strong>
-                                 <a href="#">제조사 홈</a>
-                              </div>
-                              <div class="info">
-                                 <ul>
-                                    <li>
-                                       <strong>종류</strong>
-                                       <sapn>모듈</sapn>
-                                    </li>
-                                    <li>
-                                       <strong>통신망</strong>
-                                       <span>LTE-M</span>
-                                    </li>
-                                    <li>
-                                       <strong>모뎀 제조사</strong>
-                                       <span>팬텍</span>
-                                    </li>
-                                    <li>
-                                       <strong>칩셋 제조사</strong>
-                                       <span>퀄컴</span>
-                                    </li>
-                                    <li>
-                                       <strong>칩셋명</strong>
-                                       <span>MDM9207</span>
-                                    </li>
-                                    <li>
-                                       <strong>Category</strong>
-                                       <span>Cat.1</span>
-                                    </li>
-                                 </ul>
-                              </div>
-                              <div class="det">
-                                 <div class="checkbox">
-                                    <input type="checkbox" id="checkbox">
-                                    <label for="checkbox">비교하기</label>
-                                 </div>
-                                 <button>상세보기</button>
-                              </div>
-                           </div>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="tabPage">
-                     <div class="pagination">
-                        <a href="" class="arrow first disabled"></a>
-                        <a href="" class="arrow prev disabled"></a>
-                        <a href="" class="on">1</a>
-                        <a href="">2</a>
-                        <a href="">3</a>
-                        <a href="">4</a>
-                        <a href="">5</a>
-                        <a href="" class="arrow next"></a>
-                        <a href="" class="arrow last"></a>
+            <div class="searchContainer">
+               <div class="inner">
+                  <aside class="search">
+                     <div class="searchTitle">
+                        <strong>Filter</strong>
+                        <button>버튼</button>
                      </div>
-                  </div>
-               </section>
+                     <div class="searchContent">
+                        <ul>
+                           <li>
+                              <strong>모듈/모델명</strong>
+                              <div class="input">
+                                 <label for="input">모듈/모델명</label>
+                                 <input type="text" id="input" placeholder="모듈/모델명을 입력하세요.">
+                              </div>
+                           </li>
+                           <li>
+                              <strong>통신망</strong>
+                              <div class="select">
+                                 <select id="select" required>
+                                    <option value="">통신망을 선택하세요.</option>
+                                    <option value="">전체</option>
+                                 </select>
+                                 <label for="select">통신망</label>
+                              </div> 
+                           </li>
+                           <li>
+                              <strong>모뎀 제조사</strong>
+                              <div class="select">
+                                 <select id="select" required>
+                                    <option value="">모뎀 제조사를 선택하세요.</option>
+                                    <option value="">전체</option>
+                                 </select>
+                                 <label for="select">모뎀 제조사</label>
+                              </div>
+                           </li>
+                           <li>
+                              <strong>칩셋 제조사</strong>
+                              <div class="select">
+                                 <select id="select" required>
+                                    <option value="">칩셋 제조사를 선택하세요.</option>
+                                    <option value="">전체</option>
+                                 </select>
+                                 <label for="select">칩셋 제조사</label>
+                              </div> 
+                           </li>
+                           <li>
+                              <strong>칩셋명</strong>
+                              <div class="select">
+                                 <select id="select" required>
+                                    <option value="">칩셋명을 선택하세요.</option>
+                                    <option value="">전체</option>
+                                 </select>
+                                 <label for="select">칩셋명</label>
+                              </div>
+                           </li>
+                        </ul>
+                        <button class="submit">적용</button>
+                        <button class="clear">Clear filters</button>
+                     </div>
+                  </aside>
+                  <section class="section">
+                     <div class="tabMenu">
+                        <ul>
+                           <li>
+                              <a href="">NB-IoT</a>
+                           </li>
+                           <li>
+                              <!-- [i] 선택한 tab on -->
+                              <a href="" class="on">eMTC</a>
+                           </li>
+                           <li>
+                              <a href="">LTE-M</a>
+                           </li>
+                           <li>
+                              <a href="">LTE</a>
+                           </li>
+                           <li>
+                              <a href="">5G</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="tabContent">
+                        <ul>
+                           <li>
+                              <div class="item">
+                                 <div class="img">
+                                    <img src="images/sample/img_showcase_01.png" alt="PM-L410K">
+                                 </div>
+                                 <div class="tit">
+                                    <strong>PM-L410K</strong>
+                                    <a href="#">제조사 홈</a>
+                                 </div>
+                                 <div class="info">
+                                    <ul>
+                                       <li>
+                                          <strong>종류</strong>
+                                          <sapn>모듈</sapn>
+                                       </li>
+                                       <li>
+                                          <strong>통신망</strong>
+                                          <span>LTE-M</span>
+                                       </li>
+                                       <li>
+                                          <strong>모뎀 제조사</strong>
+                                          <span>팬텍</span>
+                                       </li>
+                                       <li>
+                                          <strong>칩셋 제조사</strong>
+                                          <span>퀄컴</span>
+                                       </li>
+                                       <li>
+                                          <strong>칩셋명</strong>
+                                          <span>MDM9207</span>
+                                       </li>
+                                       <li>
+                                          <strong>Category</strong>
+                                          <span>Cat.1</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="det">
+                                    <div class="checkbox">
+                                       <input type="checkbox" id="checkbox">
+                                       <label for="checkbox">비교하기</label>
+                                    </div>
+                                    <button>상세보기</button>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="item">
+                                 <div class="img">
+                                    <img src="images/sample/img_showcase_01.png" alt="PM-L410K">
+                                 </div>
+                                 <div class="tit">
+                                    <strong>PM-L410K</strong>
+                                    <a href="#">제조사 홈</a>
+                                 </div>
+                                 <div class="info">
+                                    <ul>
+                                       <li>
+                                          <strong>종류</strong>
+                                          <sapn>모듈</sapn>
+                                       </li>
+                                       <li>
+                                          <strong>통신망</strong>
+                                          <span>LTE-M</span>
+                                       </li>
+                                       <li>
+                                          <strong>모뎀 제조사</strong>
+                                          <span>팬텍</span>
+                                       </li>
+                                       <li>
+                                          <strong>칩셋 제조사</strong>
+                                          <span>퀄컴</span>
+                                       </li>
+                                       <li>
+                                          <strong>칩셋명</strong>
+                                          <span>MDM9207</span>
+                                       </li>
+                                       <li>
+                                          <strong>Category</strong>
+                                          <span>Cat.1</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="det">
+                                    <div class="checkbox">
+                                       <input type="checkbox" id="checkbox">
+                                       <label for="checkbox">비교하기</label>
+                                    </div>
+                                    <button>상세보기</button>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="item">
+                                 <div class="img">
+                                    <img src="images/sample/img_showcase_01.png" alt="PM-L410K">
+                                 </div>
+                                 <div class="tit">
+                                    <strong>PM-L410K</strong>
+                                    <a href="#">제조사 홈</a>
+                                 </div>
+                                 <div class="info">
+                                    <ul>
+                                       <li>
+                                          <strong>종류</strong>
+                                          <sapn>모듈</sapn>
+                                       </li>
+                                       <li>
+                                          <strong>통신망</strong>
+                                          <span>LTE-M</span>
+                                       </li>
+                                       <li>
+                                          <strong>모뎀 제조사</strong>
+                                          <span>팬텍</span>
+                                       </li>
+                                       <li>
+                                          <strong>칩셋 제조사</strong>
+                                          <span>퀄컴</span>
+                                       </li>
+                                       <li>
+                                          <strong>칩셋명</strong>
+                                          <span>MDM9207</span>
+                                       </li>
+                                       <li>
+                                          <strong>Category</strong>
+                                          <span>Cat.1</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="det">
+                                    <div class="checkbox">
+                                       <input type="checkbox" id="checkbox">
+                                       <label for="checkbox">비교하기</label>
+                                    </div>
+                                    <button>상세보기</button>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="item">
+                                 <div class="img">
+                                    <img src="images/sample/img_showcase_01.png" alt="PM-L410K">
+                                 </div>
+                                 <div class="tit">
+                                    <strong>PM-L410K</strong>
+                                    <a href="#">제조사 홈</a>
+                                 </div>
+                                 <div class="info">
+                                    <ul>
+                                       <li>
+                                          <strong>종류</strong>
+                                          <sapn>모듈</sapn>
+                                       </li>
+                                       <li>
+                                          <strong>통신망</strong>
+                                          <span>LTE-M</span>
+                                       </li>
+                                       <li>
+                                          <strong>모뎀 제조사</strong>
+                                          <span>팬텍</span>
+                                       </li>
+                                       <li>
+                                          <strong>칩셋 제조사</strong>
+                                          <span>퀄컴</span>
+                                       </li>
+                                       <li>
+                                          <strong>칩셋명</strong>
+                                          <span>MDM9207</span>
+                                       </li>
+                                       <li>
+                                          <strong>Category</strong>
+                                          <span>Cat.1</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="det">
+                                    <div class="checkbox">
+                                       <input type="checkbox" id="checkbox">
+                                       <label for="checkbox">비교하기</label>
+                                    </div>
+                                    <button>상세보기</button>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="item">
+                                 <div class="img">
+                                    <img src="images/sample/img_showcase_01.png" alt="PM-L410K">
+                                 </div>
+                                 <div class="tit">
+                                    <strong>PM-L410K</strong>
+                                    <a href="#">제조사 홈</a>
+                                 </div>
+                                 <div class="info">
+                                    <ul>
+                                       <li>
+                                          <strong>종류</strong>
+                                          <sapn>모듈</sapn>
+                                       </li>
+                                       <li>
+                                          <strong>통신망</strong>
+                                          <span>LTE-M</span>
+                                       </li>
+                                       <li>
+                                          <strong>모뎀 제조사</strong>
+                                          <span>팬텍</span>
+                                       </li>
+                                       <li>
+                                          <strong>칩셋 제조사</strong>
+                                          <span>퀄컴</span>
+                                       </li>
+                                       <li>
+                                          <strong>칩셋명</strong>
+                                          <span>MDM9207</span>
+                                       </li>
+                                       <li>
+                                          <strong>Category</strong>
+                                          <span>Cat.1</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="det">
+                                    <div class="checkbox">
+                                       <input type="checkbox" id="checkbox">
+                                       <label for="checkbox">비교하기</label>
+                                    </div>
+                                    <button>상세보기</button>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="item">
+                                 <div class="img">
+                                    <img src="images/sample/img_showcase_01.png" alt="PM-L410K">
+                                 </div>
+                                 <div class="tit">
+                                    <strong>PM-L410K</strong>
+                                    <a href="#">제조사 홈</a>
+                                 </div>
+                                 <div class="info">
+                                    <ul>
+                                       <li>
+                                          <strong>종류</strong>
+                                          <sapn>모듈</sapn>
+                                       </li>
+                                       <li>
+                                          <strong>통신망</strong>
+                                          <span>LTE-M</span>
+                                       </li>
+                                       <li>
+                                          <strong>모뎀 제조사</strong>
+                                          <span>팬텍</span>
+                                       </li>
+                                       <li>
+                                          <strong>칩셋 제조사</strong>
+                                          <span>퀄컴</span>
+                                       </li>
+                                       <li>
+                                          <strong>칩셋명</strong>
+                                          <span>MDM9207</span>
+                                       </li>
+                                       <li>
+                                          <strong>Category</strong>
+                                          <span>Cat.1</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="det">
+                                    <div class="checkbox">
+                                       <input type="checkbox" id="checkbox">
+                                       <label for="checkbox">비교하기</label>
+                                    </div>
+                                    <button>상세보기</button>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="item">
+                                 <div class="img">
+                                    <img src="images/sample/img_showcase_01.png" alt="PM-L410K">
+                                 </div>
+                                 <div class="tit">
+                                    <strong>PM-L410K</strong>
+                                    <a href="#">제조사 홈</a>
+                                 </div>
+                                 <div class="info">
+                                    <ul>
+                                       <li>
+                                          <strong>종류</strong>
+                                          <sapn>모듈</sapn>
+                                       </li>
+                                       <li>
+                                          <strong>통신망</strong>
+                                          <span>LTE-M</span>
+                                       </li>
+                                       <li>
+                                          <strong>모뎀 제조사</strong>
+                                          <span>팬텍</span>
+                                       </li>
+                                       <li>
+                                          <strong>칩셋 제조사</strong>
+                                          <span>퀄컴</span>
+                                       </li>
+                                       <li>
+                                          <strong>칩셋명</strong>
+                                          <span>MDM9207</span>
+                                       </li>
+                                       <li>
+                                          <strong>Category</strong>
+                                          <span>Cat.1</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="det">
+                                    <div class="checkbox">
+                                       <input type="checkbox" id="checkbox">
+                                       <label for="checkbox">비교하기</label>
+                                    </div>
+                                    <button>상세보기</button>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="item">
+                                 <div class="img">
+                                    <img src="images/sample/img_showcase_01.png" alt="PM-L410K">
+                                 </div>
+                                 <div class="tit">
+                                    <strong>PM-L410K</strong>
+                                    <a href="#">제조사 홈</a>
+                                 </div>
+                                 <div class="info">
+                                    <ul>
+                                       <li>
+                                          <strong>종류</strong>
+                                          <sapn>모듈</sapn>
+                                       </li>
+                                       <li>
+                                          <strong>통신망</strong>
+                                          <span>LTE-M</span>
+                                       </li>
+                                       <li>
+                                          <strong>모뎀 제조사</strong>
+                                          <span>팬텍</span>
+                                       </li>
+                                       <li>
+                                          <strong>칩셋 제조사</strong>
+                                          <span>퀄컴</span>
+                                       </li>
+                                       <li>
+                                          <strong>칩셋명</strong>
+                                          <span>MDM9207</span>
+                                       </li>
+                                       <li>
+                                          <strong>Category</strong>
+                                          <span>Cat.1</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="det">
+                                    <div class="checkbox">
+                                       <input type="checkbox" id="checkbox">
+                                       <label for="checkbox">비교하기</label>
+                                    </div>
+                                    <button>상세보기</button>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="item">
+                                 <div class="img">
+                                    <img src="images/sample/img_showcase_01.png" alt="PM-L410K">
+                                 </div>
+                                 <div class="tit">
+                                    <strong>PM-L410K</strong>
+                                    <a href="#">제조사 홈</a>
+                                 </div>
+                                 <div class="info">
+                                    <ul>
+                                       <li>
+                                          <strong>종류</strong>
+                                          <sapn>모듈</sapn>
+                                       </li>
+                                       <li>
+                                          <strong>통신망</strong>
+                                          <span>LTE-M</span>
+                                       </li>
+                                       <li>
+                                          <strong>모뎀 제조사</strong>
+                                          <span>팬텍</span>
+                                       </li>
+                                       <li>
+                                          <strong>칩셋 제조사</strong>
+                                          <span>퀄컴</span>
+                                       </li>
+                                       <li>
+                                          <strong>칩셋명</strong>
+                                          <span>MDM9207</span>
+                                       </li>
+                                       <li>
+                                          <strong>Category</strong>
+                                          <span>Cat.1</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="det">
+                                    <div class="checkbox">
+                                       <input type="checkbox" id="checkbox">
+                                       <label for="checkbox">비교하기</label>
+                                    </div>
+                                    <button>상세보기</button>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="tabPage">
+                        <div class="pagination">
+                           <a href="" class="arrow first disabled"></a>
+                           <a href="" class="arrow prev disabled"></a>
+                           <a href="" class="on">1</a>
+                           <a href="">2</a>
+                           <a href="">3</a>
+                           <a href="">4</a>
+                           <a href="">5</a>
+                           <a href="" class="arrow next"></a>
+                           <a href="" class="arrow last"></a>
+                        </div>
+                     </div>
+                  </section>
+               </div>
             </div>
          </div>
       </main>

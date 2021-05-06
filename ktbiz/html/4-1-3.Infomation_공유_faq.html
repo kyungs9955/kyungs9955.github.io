@@ -130,7 +130,7 @@
                            </ul>
                         </div>
                      </li>
-                     <li class="active">
+                     <li>
                         <strong>Support</strong>
                         <div class="menuContent">
                            <ul class="depth2 inner">
@@ -166,7 +166,7 @@
                                  <a href="">KT IoT 사업협력센터</a>
                                  <ul class="depth3">
                                     <li>
-                                       <a href="" class="on">센터 소개</a>
+                                       <a href="">센터 소개</a>
                                     </li>
                                     <li>
                                        <a href="">장비 현황</a>
@@ -179,7 +179,7 @@
                            </ul>
                         </div>
                      </li>
-                     <li>
+                     <li class="active">
                         <strong>Information</strong>
                         <div class="menuContent">
                            <ul class="depth2 inner">
@@ -193,7 +193,7 @@
                                        <a href="">공지사항</a>
                                     </li>
                                     <li>
-                                       <a href="">FAQ</a>
+                                       <a href="" class="on">FAQ</a>
                                     </li>
                                  </ul>
                               </li>
@@ -205,16 +205,16 @@
             </div>
          </div>
       </header>
-      <main class="subContainer company">
+      <main class="subContainer information">
          <div class="subVisual">
             <div class="inner">
                <div class="location">
                   <span>Home</span>
-                  <span>Support</span>
-                  <span>KT IoT 사업협력센터</span>
-                  <span>센터 소개</span>
+                  <span>Information</span>
+                  <span>공유</span>
+                  <span>FAQ</span>
                </div>
-               <h1>개발 지원</h1>
+               <h1>공유</h1>
             </div>
          </div>
          <div class="subContent">
@@ -222,81 +222,152 @@
                <div class="inner">
                   <ul>
                      <li>
-                        <a href="" class="on">센터 소개</a>
+                        <a href="">자료실</a>
                      </li>
                      <li>
-                        <a href="">장비 현황</a>
+                        <a href="">공지사항</a>
                      </li>
                      <li>
-                        <a href="">검증 컨설팅</a>
+                        <a href="" class="on">FAQ</a>
                      </li>
                   </ul>
                </div>
             </div>
             <section class="section">
                <div class="inner">
-                  <h2>센터 소개</h2>
-                  <div class="listContent">
-                     <div class="title">
-                        <strong>KT IoT 사업협력센터 소개</strong>
-                     </div>
-                     <div class="content">
+                  <div class="tabMenu">
+                     <ul>
+                        <li>
+                           <!-- [i] 선택한 tab on -->
+                           <a href="" class="on">일반</a>
+                        </li>
+                        <li>
+                           <a href="">KT IoT</a>
+                        </li>
+                        <li>
+                           <a href="">Showcase</a>
+                        </li>
+                        <li>
+                           <a href="">Support</a>
+                        </li>
+                        <li>
+                           <a href="">Information</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="tabContent">
+                     <div class="faqContainer">
                         <ul>
-                           <li>KT IoT 사업협력센터는 IoT 단말의 [개발 → 검증 → 상용화 → 품질관리] 까지의 End-To-End 서비스를 제공합니다.</li>
-                           <li>또한 서비스 개발을 위한 공간과 장비를 지원하여 최적의 개발 환경을 제공합니다.</li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="listContent">
-                     <div class="title">
-                        <strong>운영시간</strong>
-                     </div>
-                     <div class="content">
-                        <ul class="list">
-                           <li>평일 9:30 AM ~ 6 PM</li>
-                           <li>평일에만 방문 및 연락이 가능합니다.</li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="listContent">
-                     <div class="title">
-                        <strong>주소 및 연락처</strong>
-                     </div>
-                     <div class="content">
-                        <ul class="list">
-                           <li><em>지번</em> : 서울특별시 구로구 개봉동 280-7 KT개봉지사 4층</li>
-                           <li><em>도로명</em> : 서울 구로구 개봉로6길 12-5 KT개봉지사 4층</li>
-                           <li><em>연락처</em> : <a href="tel:02-2613-0027">02-2613-0027</a></li>
-                           <li><em>이메일</em> : <a href="mailto:chang-h81@dkitec.com">chang-h81@dkitec.com</a></li>
-                        </ul>
-                        <div class="map">
-                           <!-- * 카카오맵 - 지도퍼가기 -->
-                           <!-- 1. 지도 노드 -->
-                           <div id="daumRoughmapContainer1620262235631" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%;height:100%"></div>
-                           <!--
-                              2. 설치 스크립트
-                              * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-                           -->
-                           <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-                           <!-- 3. 실행 스크립트 -->
-                           <script charset="UTF-8">
-                              new daum.roughmap.Lander({
-                                 "timestamp" : "1620262235631",
-                                 "key" : "25ncr",
-                              }).render();
-                           </script>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="listContent">
-                     <div class="title">
-                        <strong>찾아오시는 길</strong>
-                     </div>
-                     <div class="content">
-                        <ul class="list">
-                           <li><em>지하철</em> : 지하철 7호선 광명사거리역 7번 출구, 지하철 1호선 개봉역 1번출구로 나와 KT개봉빌딩 방향으로 약 도보 15분</li>
-                           <li><em>버스</em> : 1, 11, 22, 39, 510, 530, 6816, 301, 320 대원주유소 정류장 하차, 맞은편 차도 건너 도착</li>
-                           <li><em>자가용</em> : 광명IC > 광명사거리역 방면 직진 > 광명사거리를 통과하여 500m 직진 > 기아오토큐 맞은편에서 우회전 진입</li>
+                           <li>
+                              <div class="title">
+                                 <strong>자주하는 질문입니다.</strong>
+                              </div>
+                              <div class="content">
+                                 <p>질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?</p>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="title">
+                                 <strong>자주하는 질문입니다.</strong>
+                              </div>
+                              <div class="content">
+                                 <p>질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?</p>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="title">
+                                 <strong>자주하는 질문입니다.</strong>
+                              </div>
+                              <div class="content">
+                                 <p>질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?</p>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="title">
+                                 <strong>자주하는 질문입니다.</strong>
+                              </div>
+                              <div class="content">
+                                 <p>질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?</p>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="title">
+                                 <strong>자주하는 질문입니다.</strong>
+                              </div>
+                              <div class="content">
+                                 <p>질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?</p>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="title">
+                                 <strong>자주하는 질문입니다.</strong>
+                              </div>
+                              <div class="content">
+                                 <p>질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?</p>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="title">
+                                 <strong>자주하는 질문입니다.</strong>
+                              </div>
+                              <div class="content">
+                                 <p>질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?</p>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="title">
+                                 <strong>자주하는 질문입니다.</strong>
+                              </div>
+                              <div class="content">
+                                 <p>질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?</p>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="title">
+                                 <strong>자주하는 질문입니다.</strong>
+                              </div>
+                              <div class="content">
+                                 <p>질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?</p>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="title">
+                                 <strong>자주하는 질문입니다.</strong>
+                              </div>
+                              <div class="content">
+                                 <p>질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?
+                                    질문에 대한 답변입니다. 도움이 되셨나요?</p>
+                              </div>
+                           </li>
                         </ul>
                      </div>
                   </div>

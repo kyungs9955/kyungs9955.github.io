@@ -208,7 +208,28 @@
 
 .table table {width:100%}
 .table table th,
-.table table td {padding:16px 10px;font-size:1.5rem;border-bottom:1px solid #e6e6e6}
+.table table td {padding:16px 10px;font-size:1.5rem;border-bottom:1px solid #e6e6e6;color:#555}
+.table ul.tableList {display:table;width:100%;border:1px solid #999;border-width:1px 0}
+.table ul.tableList li {display:table-row}
+.table ul.tableList li.thead span {font-weight:500;color:#333;background:#f7f7f7}
+.table ul.tableList li span {display:table-cell;padding:16px 10px;text-align:center;font-size:1.5rem;color:#555;border-bottom:1px solid #e6e6e6}
+.table ul.tableList li span a {display:block;text-align:left}
+.table ul.tableList li:last-child span {border:0}
+.table ul.tableList li.notice span {color:#2cbbb6}
+.table ul.tableList li.nodata p {width:100%}
+.table ul.tableDetail li {border-bottom:1px solid #e6e6e6}
+.table ul.tableDetail li.thead {padding:50px 0;text-align:center;border-top:1px solid #999}
+.table ul.tableDetail li.thead strong {display:block;margin-bottom:20px;font-weight:500;font-size:2.8rem}
+.table ul.tableDetail li.thead strong em {font-weight:inherit}
+.table ul.tableDetail li.thead span {display:inline-block;font-size:2rem}
+.table ul.tableDetail li.thead span + span::before {content:'';display:inline-block;width:1px;height:20px;margin:0 20px;vertical-align:middle;background-color:#999}
+.table ul.tableDetail li.tbody {padding:80px 50px;font-size:1.8rem}
+.table ul.tableDetail li.tfoot {display:flex}
+.table ul.tableDetail li.tfoot div {padding:20px 40px;box-sizing:border-box}
+.table ul.tableDetail li.tfoot div.th {width:250px;line-height:45px;text-align:center;font-size:1.8rem;background-color:#f7f7f7;}
+.table ul.tableDetail li.tfoot div.td span {display:inline-block;margin-right:40px;font-size:1.8rem;color:#555}
+.table ul.tableDetail li.tfoot div.td em {margin-left:20px;font-size:1.8rem;;color:#999}
+.table ul.tableDetail li.tfoot div.td button {display:inline-block;padding:12px 30px;font-size:1.6rem;color:#fff;border-radius:3px;background-color:#2cbbb6}
 
 .subContent {padding:70px 0 100px}
 .subContent h2 {margin-bottom:40px;font-weight:500;font-size:2.6rem}
@@ -233,13 +254,19 @@
 .subContent .list > li + li {margin-top:20px}
 .subContent .list > li > ul > li {display:block;margin-top:10px;padding-left:10px;color:#666}
 .subContent .list > li > ul > li::before {content:'-';display:inline-block;margin-right:5px}
+
 .subMenu {text-align:center}
-.subMenu ul {display:inline-block;max-width:100%;padding:10px;border-radius:3em;box-shadow:0px 2px 26px 0px rgba(0,0,0,0.06);box-sizing:border-box}
+.subMenu ul {overflow-x:auto;white-space:nowrap;display:inline-block;max-width:100%;padding:10px;border-radius:3em;box-shadow:0px 2px 26px 0px rgba(0,0,0,0.06);box-sizing:border-box}
 .subMenu li {display:inline-block}
 .subMenu a {display:block;height:60px;line-height:60px;padding:0 38px;font-weight:500;font-size:2.4rem;color:#bbb;border-radius:3em}
 .subMenu a.on {color:#fff;background:#2cbbb6}
-
 .subMenu + .section {margin-top:80px}
+
+.tabMenu ul {overflow-x:auto;white-space:nowrap;display:flex;width:100%;padding:0 20px;border-bottom:1px solid #e6e6e6;box-sizing:border-box}
+.tabMenu li + li {margin-left:50px}
+.tabMenu li a {position:relative;display:block;height:50px;padding:0 10px;line-height:50px;font-size:1.6rem}
+.tabMenu li a.on {color:#2cbbb6}
+.tabMenu li a.on::after {content:'';position:absolute;bottom:0;left:0;display:block;width:100%;height:2px;background-color:#2cbbb6}
 
 .subContainer.iot .network h2 + .content {margin-top:40px}
 .subContainer.iot .network .image {overflow:hidden;margin:40px 0;border-radius:25px}
@@ -319,15 +346,9 @@
 .subContainer.plan .planTitle .info > li.message::before {background-position-x:-312px}
 .subContainer.plan .planTitle + .planContent {margin-top:80px}
 .subContainer.plan .planContent .table thead tr:first-child th {border-top:1px solid #999 }
-.subContainer.plan .planContent .table thead th {font-weight:500;background:#f7f7f7}
+.subContainer.plan .planContent .table thead th {font-weight:500;color:#333;background:#f7f7f7}
 .subContainer.plan .planContent .table table + ul,
 .subContainer.plan .planContent .table ul + table {margin-top:30px}
-.subContainer.showcase .tabMenu ul {width:100%;padding:0 20px;border-bottom:1px solid #e6e6e6;box-sizing:border-box}
-.subContainer.showcase .tabMenu li {display:inline-block}
-.subContainer.showcase .tabMenu li + li {margin-left:50px}
-.subContainer.showcase .tabMenu li a {position:relative;display:block;height:50px;padding:0 10px;line-height:50px;font-size:1.6rem}
-.subContainer.showcase .tabMenu li a.on {color:#2cbbb6}
-.subContainer.showcase .tabMenu li a.on::after {content:'';position:absolute;bottom:0;left:0;display:block;width:100%;height:2px;background-color:#2cbbb6}
 .subContainer.showcase .tabContent {margin-top:50px}
 .subContainer.showcase .tabContent > ul {display:flex;flex-wrap:wrap;justify-content:space-between}
 .subContainer.showcase .tabContent > ul > li {flex-basis:30%;margin-bottom:50px}
@@ -369,7 +390,7 @@
 .subContainer.showcase .showcaseList .title button::before {content:'';display:block;width:18px;height:10px;margin:0 auto;background:url('../images/icons.png') no-repeat -71px -141px;transition:transform .3s}
 .subContainer.showcase .showcaseList .title button.close::before {transform:rotate(-180deg)}
 .subContainer.showcase .showcaseList .content p {padding:16px 10px;line-height:1.6em}
-.subContainer.showcase .showcaseList .table th {text-align:left;font-weight:500}
+.subContainer.showcase .showcaseList .table th {text-align:left;font-weight:500;color:#333}
 .subContainer.showcase .showcaseList .table td {color:#555}
 .subContainer.showcase .showcaseList .table tr:last-child th,
 .subContainer.showcase .showcaseList .table tr:last-child td {border-bottom:1px solid #999}
@@ -397,8 +418,8 @@
 .subContainer.company .listContent .map {width:100%;height:750px;margin-top:40px}
 .subContainer.company p + .table {margin-top:70px}
 .subContainer.company .table.mobile {display:none}
-.subContainer.company .table thead tr:first-child th {border-top:1px solid #999 }
-.subContainer.company .table thead th {font-weight:500;background:#f7f7f7}
+.subContainer.company .table thead tr:first-child th {border-top:1px solid #999}
+.subContainer.company .table thead th {font-weight:500;color:#333;background:#f7f7f7}
 .subContainer.company .table td img {width:180px;height:100px;object-fit:contain}
 .subContainer.company .table td ul {text-align:left}
 .subContainer.company .button {margin-top:70px;text-align:center}
@@ -413,11 +434,22 @@
 .subContainer.company .consulting .box li::before {content:'';position:absolute;top:6px;left:0;display:block;width:15px;height:14px;background:url('../images/icons.png') no-repeat -105px -150px}
 .subContainer.company .consulting .box li + li {margin-top:20px}
 .subContainer.company .consulting + p {margin-top:20px}
+.subContainer.information .table + .pagination {margin-top:70px}
+.subContainer.information .button {text-align:right}
+.subContainer.information .button button {display:inline-block;padding:12px 30px;font-size:1.6rem;color:#fff;border-radius:3px;background-color:#2cbbb6}
+.subContainer.information .faqContainer .content {display:none}
+.subContainer.information .faqContainer li {padding:30px;border-bottom:1px solid #e6e6e6}
+.subContainer.information .faqContainer li .title {position:relative;padding:0 30px;cursor:pointer}
+.subContainer.information .faqContainer li .title::before {content:'Q.';position:absolute;top:0;left:0;font-family:'Montserrat';font-weight:500;font-size:20px;color:#ccc}
+.subContainer.information .faqContainer li .title::after {content:'';position:absolute;top:6px;right:0;display:block;width:18px;height:10px;background:url('../images/icons.png') no-repeat -50px -170px;transition:transform .3s}
+.subContainer.information .faqContainer li .title strong {font-size:1.8rem}
+.subContainer.information .faqContainer li .content {position:relative;margin-top:30px;padding-left:30px}
+.subContainer.information .faqContainer li .content::before {content:'A.';position:absolute;top:0;left:0;line-height:3.4rem;font-family:'Montserrat';font-weight:500;font-size:20px;color:#333}
+.subContainer.information .faqContainer li.active {background-color:#fafafa}
+.subContainer.information .faqContainer li.active .title::before {color:#2cbbb6}
+.subContainer.information .faqContainer li.active .title::after {background-position-y:-180px;transform:rotate(180deg)}
 
 
-.subMenu + .searchContainer {margin-top:80px;border-top:1px solid #e6e6e6}
-.subMenu + .searchContainer .inner {padding-top:50px}
-.subMenu + .searchContainer .search + .section::before {top:-50px;height:calc(100% + 150px)}
 .searchContainer .inner {display:flex;justify-content:space-between}
 .searchContainer .search {width:300px}
 .searchContainer .search + .section {position:relative;width:calc(100% - 450px)}
@@ -425,7 +457,8 @@
 .searchContainer .searchTitle {display:flex;align-items:center;justify-content:space-between;width:100%;border-bottom:1px solid #999}
 .searchContainer .searchTitle strong {font-family:'Montserrat';line-height:50px;font-weight:600;font-size:2rem}
 .searchContainer .searchTitle button {display:none;overflow:hidden;width:20px;height:20px;text-indent:-999px;font-size:0}
-.searchContainer .searchTitle button::before {content:'';display:block;width:18px;height:14px;margin:0 auto;background:url('../images/icons.png') no-repeat -216px -30px}
+.searchContainer .searchTitle button::before {content:'';display:block;width:18px;height:10px;margin:0 auto;background:url('../images/icons.png') no-repeat -70px -141px;transition:transform .3s}
+.searchContainer .searchTitle button.close::before {transform:rotate(-180deg)}
 .searchContainer .searchContent ul {margin-top:50px}
 .searchContainer .searchContent li + li {margin-top:30px}
 .searchContainer .searchContent li strong {display:block;margin-bottom:10px;font-size:1.6rem;color:#555}
@@ -433,6 +466,9 @@
 .searchContainer .searchContent li .calendar + .calendar::before {content:'~';position:absolute;top:-25px;left:0;width:100%;height:25px;line-height:25px;text-align:center;font-size:1.6rem}
 .searchContainer .searchContent .submit {display:block;width:100%;height:40px;margin-top:30px;line-height:40px;text-align:center;font-size:1.4rem;color:#fff;border-radius:3px;background-color:#2cbbb6}
 .searchContainer .searchContent .clear {display:inline-block;margin-top:40px;;font-family:'Montserrat';font-weight:500;font-size:1.6rem;color:#2cbbb6}
+.subMenu + .searchContainer {margin-top:80px;border-top:1px solid #e6e6e6}
+.subMenu + .searchContainer .inner {padding-top:50px}
+.subMenu + .searchContainer .search + .section::before {top:-50px;height:calc(100% + 150px)}
 .guideContainer {margin-top:80px;border-top:1px solid #e6e6e6}
 .guideContainer .inner {display:flex;justify-content:space-between;padding-top:50px}
 .guideContainer .guideList {width:300px}
@@ -448,7 +484,7 @@
 .guideContainer .guideList > ul > li > ul > li a {font-size:1.6rem;color:#555}
 .guideContainer .guideList > ul > li > ul > li a.on {color:#2cbbb6}
 .guideContainer .guideList > ul > li > ul > li + li {margin-top:15px}
-.guideContainer .guideList > ul > li > ul > li > ul {padding:10px}
+.guideContainer .guideList > ul > li > ul > li > ul {padding:10px 10px 0}
 .guideContainer .guideList > ul > li > ul > li > ul > li + li {margin-top:10px}
 .guideContainer .guideList > ul > li.active > ul {display:block}
 .guideContainer .guideList > ul > li.active > .title {border-bottom:1px solid #bbb}
@@ -461,7 +497,6 @@
 .guideContainer .guideHeader button.disabled {color:#ccc}
 .guideContainer .guideHeader button.disabled::before {background-position-x:-80px}
 .guideContainer .guideContent {margin-top:50px}
-
 
 .compareContainer {position:fixed;bottom:0;right:0;max-width:1300px;width:100%;z-index:1}
 .compareContent {overflow:hidden;display:flex;justify-content:flex-end;width:auto;border-top-left-radius:20px;border-top-right-radius:20px;box-shadow:0 0 16px 0 rgba(0,0,0,0.16)}
@@ -483,7 +518,7 @@
 .pagination a.arrow.next::before {background-position-x:-33px;transform:scaleX(-1)}
 .pagination a.arrow.first.disabled::before {background-position-x:-44px}
 .pagination a.arrow.last.disabled::before {background-position-x:-44px;transform:scaleX(-1)}
-.pagination a.arrow.prev.disabled::before {background-position-x:-5px}
+.pagination a.arrow.prev.disabled::before {background-position-x:-55px}
 .pagination a.arrow.next.disabled::before {background-position-x:-55px;transform:scaleX(-1)}
 
 .footer {background:#151515}
@@ -508,7 +543,7 @@
 .modal.compare .modalContainer {width:90%;max-width:1600px;}
 .modal.compare .table tr:first-child th,
 .modal.compare .table tr:first-child td {padding:30px 10px}
-.modal.compare .table th {text-align:left;font-weight:500}
+.modal.compare .table th {text-align:left;font-weight:500;color:#333}
 .modal.compare .table td {color:#555}
 .modal.compare .table tr:last-child th,
 .modal.compare .table tr:last-child td {border-bottom:1px solid #999}
@@ -567,6 +602,8 @@ html {font-size:9px}
 .mainNotice .more::before {width:16px}
 .mainNotice .more::after {height:16px}
 
+.table ul.tableDetail li.tfoot div.th {display:none}
+
 .subMenu a {height:45px;line-height:45px;padding:0 15px}
 
 .subContainer.iot .process .flow .box {width:calc(50% - 35px)}
@@ -601,6 +638,8 @@ html {font-size:9px}
 
 .searchContainer .inner {flex-direction:column}
 .searchContainer .search {width:100%}
+.searchContainer .search + .section {width:100%;margin-top:100px}
+.searchContainer .search + .section::before {left:-5%;top:-50px;width:calc(100% + 10%);height:1px}
 .searchContainer .searchTitle button {display:block}
 .searchContainer .searchContent ul {display:flex;flex-wrap:wrap;justify-content:space-between;margin-top:20px}
 .searchContainer .searchContent li {display:flex;align-items:center;width:48%}
@@ -657,12 +696,23 @@ html {font-size:9px}
 
 .table table th, 
 .table table td {padding:10px 5px}
-.table > ul {display:block}
-.table > ul > li {display:flex;flex-direction:column}
-.table > ul > li span {display:block;padding:0;border:0;text-align:left}
-.table > ul > li.thead {display:none}
-.table > ul > li.thead + li {border-top:1px solid #999}
-
+.table ul.tableList {display:block}
+.table ul.tableList li {display:block;padding:10px 5px;border-bottom:1px solid #e6e6e6}
+.table ul.tableList li span {display:inline-block;padding:0;;border:0;text-align:left}
+.table ul.tableList li span[data-label] {margin-right:15px;color:#555}
+.table ul.tableList li span[data-label]::before {content:attr(data-label);margin-right:5px;color:#999}
+.table ul.tableList li span.tit {display:block;margin-bottom:10px;font-size:1.8rem}
+.table ul.tableList li:not(.notice) span.num {display:none}
+.table ul.tableList li.thead {display:none}
+.table ul.tableDetail li.thead {padding:20px 0}
+.table ul.tableDetail li.thead strong {margin-bottom:5px;font-size:2rem}
+.table ul.tableDetail li.thead span {font-size:1.6rem}
+.table ul.tableDetail li.tbody {padding:20px}
+.table ul.tableDetail li.tbody p {line-height:normal; font-size:1.6rem}
+.table ul.tableDetail li.tfoot div {padding:10px 20px}
+.table ul.tableDetail li.tfoot div.td span {margin-right:10px;font-size:1.6rem}
+.table ul.tableDetail li.tfoot div.td span em {margin-left:5px;font-size:1.6rem}
+.table ul.tableDetail li.tfoot div.td button {padding:6px 14px;font-size:1.4rem}
 
 .subVisual {height:auto;padding-top:60px}
 .subVisual .inner {height:190px}
@@ -679,8 +729,14 @@ html {font-size:9px}
 .subContent .listContent .content  li + li {margin-top:10px}
 .subContent .list > li + li {margin-top:10px}
 .subContent .list > li > ul > li {margin-top:5px}
+
 .subMenu a {height:36px;line-height:36px;padding:0 10px;font-weight:normal;font-size:1.6rem}
 .subMenu + .section {margin-top:40px}
+
+.tabMenu li + li {margin-left:10px}
+.tabMenu ul {padding:0}
+.tabMenu li + li {margin-left:5px}
+.tabMenu li a {padding:0 5px}
 
 .subContainer.iot h2 + .content {margin-top:20px}
 .subContainer.iot .network .image {margin:20px 0}
@@ -732,13 +788,7 @@ html {font-size:9px}
 .subContainer.plan .planTitle .info > li.phone::before {background-position-x:-192px}
 .subContainer.plan .planTitle .info > li.message::before {background-position-x:-216px}
 .subContainer.plan .planTitle + .planContent {margin-top:40px}
-.subContainer.showcase .search + .section {margin-top:40px}
-.subContainer.showcase .searchContent {display:none}
 .subContainer.showcase .searchContent li {width:100%}
-.subContainer.showcase .tabMenu li + li {margin-left:10px}
-.subContainer.showcase .tabMenu ul {padding:0}
-.subContainer.showcase .tabMenu li + li {margin-left:5px}
-.subContainer.showcase .tabMenu li a {padding:0 5px}
 .subContainer.showcase .tabContent {margin-top:25px}
 .subContainer.showcase .tabContent > ul > li {flex-basis:100%;margin-bottom:20px}
 .subContainer.showcase .tabContent .item {padding:20px}
@@ -779,7 +829,13 @@ html {font-size:9px}
 .subContainer.company .consulting .box + .box {margin-top:20px}
 .subContainer.company .consulting .box li::before {top:4px}
 .subContainer.company .consulting .box li + li {margin-top:10px}
+.subContainer.information .table + .pagination {margin-top:35px}
+.subContainer.information .faqContainer li {padding:15px}
+.subContainer.information .faqContainer li .content {margin-top:10px}
+.subContainer.information .faqContainer li .title::after {transform:scale(0.8)}
+.subContainer.information .faqContainer li.active .title::after {transform:rotate(180deg) scale(0.8)}
 
+.subMenu + .searchContainer {margin-top:40px}
 .subContent.guide {display:flex;justify-content:space-between}
 
 .compareContent {flex-wrap:wrap;height:auto}

@@ -62,19 +62,22 @@ $(document).ready(function () {
    });
    
    //showcase
-   var $searchButton = $(".showcase .searchTitle button"),
-       $searchContent = $(".showcase .searchContent");
+   var $searchButton = $(".searchContainer .searchTitle button"),
+       $searchContent = $(".searchContainer .searchContent");
        $showcaseListButton = $(".showcase .showcaseList .title button");
        $showcaseListContent = $(".showcase .showcaseList .content");
 
    $(window).on('resize', function () {
       if (window.innerWidth <= 767) {
          $searchContent.slideUp('300');
+         $searchButton.addClass('close');
       } else {
          $searchContent.slideDown('300')
+         $searchButton.removeClass('close');
       }
    });
    $searchButton.click(function () {
+      $(this).toggleClass('close')
       $(this).parent().next($searchContent).slideToggle(300);
    });
    $showcaseListButton.click(function () {
@@ -108,13 +111,15 @@ $(document).ready(function () {
    });
 
 
-   
-
    //faq
-   $('.faqContent .question').on('click', function () {
-      $(this).parent().removeClass('open')
-      $(this).next().slideToggle(200);
-      $(this).parent().addClass('open');
+   var $faqList = $(".faqContainer li");
+       $faqTitle = $(".faqContainer .title");
+       $faqContent = $(".faqContainer .content");
+
+   $faqTitle.click(function () {
+      $(this).parent().toggleClass('active');
+      $(this).next($faqContent).slideToggle();
+
    });
 
 

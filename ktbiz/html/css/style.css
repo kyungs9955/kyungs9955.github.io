@@ -704,7 +704,7 @@ html {font-size:9px}
 .mainNotice .slick-arrow {left:-25px;width:15px;height:15px}
 .mainNotice .slick-prev {top:10px}
 .mainNotice .slick-next {bottom:10px}
-.mainNotice .slick-arrow::before {width:8px;height:4px;background-position-y:-108px}
+.mainNotice .slick-arrow::before {width:8px;height:4px;background-position-y:-109px}
 .mainNotice .more::before {width:16px}
 .mainNotice .more::after {height:16px}
 

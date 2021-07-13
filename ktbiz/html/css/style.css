@@ -344,7 +344,7 @@ body {width:100%}
 .guideContainer .guideHeader {display:flex;align-items:center;justify-content:space-between;height:50px}
 .guideContainer .guideHeader strong {font-weight:500;font-size:1.6rem}
 .guideContainer .guideHeader button {position:relative;height:30px;padding:0 20px;line-height:30px;font-size:1.6rem;color:#666}
-.guideContainer .guideHeader button::before {content:'';position:absolute;top:7px;left:0;display:block;width:9px;height:16px;background:url('../images/icons.png') no-repeat -72px -151px}
+.guideContainer .guideHeader button::before {content:'';position:absolute;top:7px;left:0;display:block;width:9px;height:16px;background:url('../images/icons.png') no-repeat -71px -152px}
 .guideContainer .guideHeader button.next::before {left:auto;right:0;transform:rotate(180deg)}
 .guideContainer .guideHeader button.disabled {color:#ccc}
 .guideContainer .guideHeader button.disabled::before {background-position-x:-81px}
@@ -695,7 +695,7 @@ html {font-size:9px}
 .mainShowcase .slick-slide {padding:25px 20px}
 .mainShowcase .slick-prev {left:160px}
 .mainShowcase .slick-next {left:200px}
-.mainShowcase .slick-arrow::before {width:9px;height:16px;background-position:-72px -151px}
+.mainShowcase .slick-arrow::before {width:9px;height:16px;background-position:-71px -152px}
 .mainShowcase .slick-disabled::before {background-position-x:-81px}
 .mainNotice .inner {padding:5px 0}
 .mainNotice .content span {display:none}

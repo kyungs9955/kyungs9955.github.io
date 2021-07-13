@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width">
+   <title>KT IoT Biz</title>
+   <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+   <script type="text/javascript" src="js/slick.js"></script>
+   <script type="text/javascript" src="js/ui.js"></script>
+   <link rel="stylesheet" type="text/css" href="css/slick.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="inner">
+            <div class="tnb">
+               <div class="goButton">
+                  <a href="">KT IoT<br /> Dev</a>
+                  <div class="tooltip">KT IoT Dev 사이트로 이동합니다</div>
+               </div>
+            </div>
+            <div class="gnb">
+               <button class="menuButton">
+                  <i>메뉴</i>
+               </button>
+               <a href="" class="logo">KT IoT Biz</a>
+               <div class="menuDim"></div>
+               <div class="menuContainer">
+                  <ul class="depth1">
+                     <li>
+                        <strong>KT IoT</strong>
+                        <div class="menuContent">
+                           <ul class="depth2">
+                              <li>
+                                 <a href="">KT IoT 소개</a>
+                                 <ul class="depth3">
+                                    <li>
+                                       <a href="">KT IoT Network</a>
+                                    </li>
+                                    <li>
+                                       <a href="">IoT 사업화 프로세스</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <a href="">사업 분야</a>
+                                 <ul class="depth3">
+                                    <li>
+                                       <a href="">원격검침</a>
+                                    </li>
+                                    <li>
+                                       <a href="">동산담보</a>
+                                    </li>
+                                    <li>
+                                       <a href="">퍼스널 모빌리티</a>
+                                    </li>
+                                    <li>
+                                       <a href="">커넥티드 카</a>
+                                    </li>
+                                    <li>
+                                       <a href="">무선결제라우터</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <a href="">요금제</a>
+                                 <ul class="depth3">
+                                    <li>
+                                       <a href="">LPWA 요금제</a>
+                                    </li>
+                                    <li>
+                                       <a href="">IoT 요금제</a>
+                                    </li>
+                                    <li>
+                                       <a href="">IoT 안심 데이터 요금제</a>
+                                    </li>
+                                    <li>
+                                       <a href="">5G 요금제</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li>
+                        <strong>Showcase</strong>
+                        <div class="menuContent">
+                           <ul class="depth2">
+                              <li>
+                                 <a href="">모듈/모뎀</a>
+                                 <ul class="depth3">
+                                    <li>
+                                       <a href="">NB-IoT</a>
+                                    </li>
+                                    <li>
+                                       <a href="">eMTC</a>
+                                    </li>
+                                    <li>
+                                       <a href="">LTE-M</a>
+                                    </li>
+                                    <li>
+                                       <a href="">LTE</a>
+                                    </li>
+                                    <li>
+                                       <a href="">5G</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <a href="">단말</a>
+                                 <ul class="depth3">
+                                    <li>
+                                       <a href="">NB-IoT</a>
+                                    </li>
+                                    <li>
+                                       <a href="">eMTC</a>
+                                    </li>
+                                    <li>
+                                       <a href="">LTE-M</a>
+                                    </li>
+                                    <li>
+                                       <a href="">LTE</a>
+                                    </li>
+                                    <li>
+                                       <a href="">5G</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="active">
+                        <strong>Support</strong>
+                        <div class="menuContent">
+                           <ul class="depth2">
+                              <li>
+                                 <a href="">개발 지원</a>
+                                 <ul class="depth3">
+                                    <li>
+                                       <a href="">개발 프로세스</a>
+                                    </li>
+                                    <li>
+                                       <a href="">개발 가이드</a>
+                                    </li>
+                                    <li>
+                                       <a href="">개발용 번호 지원</a>
+                                    </li>
+                                    <li>
+                                       <a href="">3D프린터 목업 제작 지원</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <a href="">검증 지원</a>
+                                 <ul class="depth3">
+                                    <li>
+                                       <a href="">검증 프로세스</a>
+                                    </li>
+                                    <li>
+                                       <a href="" class="on">검증 가이드</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <a href="">KT IoT 사업협력센터</a>
+                                 <ul class="depth3">
+                                    <li>
+                                       <a href="">센터 소개</a>
+                                    </li>
+                                    <li>
+                                       <a href="">장비 현황</a>
+                                    </li>
+                                    <li>
+                                       <a href="">검증 컨설팅</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li>
+                        <strong>Information</strong>
+                        <div class="menuContent">
+                           <ul class="depth2">
+                              <li>
+                                 <a href="">공유</a>
+                                 <ul class="depth3">
+                                    <li>
+                                       <a href="">자료실</a>
+                                    </li>
+                                    <li>
+                                       <a href="">공지사항</a>
+                                    </li>
+                                    <li>
+                                       <a href="">FAQ</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </header>
+      <main class="subContainer verify">
+         <div class="subVisual">
+            <div class="inner">
+               <div class="location">
+                  <span>Home</span>
+                  <span>Support</span>
+                  <span>검증 지원</span>
+                  <span>검증 가이드</span>
+               </div>
+               <h1>검증 지원</h1>
+            </div>
+         </div>
+         <div class="subContent">
+            <div class="subMenu">
+               <div class="inner">
+                  <ul>
+                     <li>
+                        <a href="">검증 프로세스</a>
+                     </li>
+                     <li>
+                        <a href="" class="on">검증 가이드</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="guideContainer">
+               <div class="inner">
+                  <aside class="guideList">
+                     <ul>
+                        <li>
+                           <div class="title">
+                              <strong>1. 일반 사항</strong>
+                              <button>버튼</button>
+                           </div>
+                           <ul>
+                              <li>
+                                 <a href="#verifyGuide01-01">1.1 목적</a>
+                              </li>
+                              <li>
+                                 <a href="#verifyGuide01-02">1.2 관련규격</a>
+                              </li>
+                              <li>
+                                 <a href="#verifyGuide01-03">1.3 약어 및 용어정리</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="active">
+                           <div class="title">
+                              <strong>2. 단말/개발/검증 지원</strong>
+                              <button>버튼</button>
+                           </div>
+                           <ul>
+                              <li>
+                                 <a href="#verifyGuide02-01">2.1 kt Device 고객지원 사이트</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <div class="title">
+                              <strong>3. 업무 프로세스</strong>
+                              <button>버튼</button>
+                           </div>
+                           <ul>
+                              <li>
+                                 <a href="#verifyGuide03-01">3.1 SAT(Specification Assurance Test)</a>
+                              </li>
+                              <li>
+                                 <a href="#verifyGuide03-02">3.2 QAT(Quality Assurance Test)  및 기능검증</a>
+                              </li>
+                              <li>
+                                 <a href="#verifyGuide03-03">3.3 검증 일정 (예시)</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <div class="title">
+                              <strong>4. 단말 검증 요구사항</strong>
+                              <button>버튼</button>
+                           </div>
+                           <ul>
+                              <li>
+                                 <a href="#verifyGuide04-01">4.1 입고 문서</a>
+                              </li>
+                              <li>
+                                 <a href="#verifyGuide04-02">4.2 SW 요구사항</a>
+                              </li>
+                              <li>
+                                 <a href="#verifyGuide04-03">4.3 단말 시료 준비</a>
+                              </li>
+                              <li>
+                                 <a href="#verifyGuide04-04">4.4 단말 방사 성능 기준</a>
+                              </li>
+                              <li>
+                                 <a href="#verifyGuide04-05">4.5 HW 구성</a>
+                              </li>
+                              <li>
+                                 <a href="#verifyGuide04-06">4.6 품질관련 주요 기능 구현</a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </aside>
+                  <section class="section">
+                     <div class="guideHeader">
+                        <button class="prev">이전</button>
+                        <strong>2. 단말/개발/검증 지원</strong>
+                        <button class="next">다음</button>
+                     </div>
+                     <div id="verifyGuide02-01" class="guideContent verifyGuide02-01">
+                        <div class="listContent">
+                           <div class="title">
+                              <strong>2.1 kt Device 고객지원 사이트</strong>
+                           </div>
+                           <div class="content">
+                              <strong>2.1.1 kt Device 고객지원 사이트 가입</strong>
+                              <div class="step">
+                                 <div class="img">
+                                    <img src="images/img_verify_guide_02_01_step1.jpg" alt="step1">
+                                 </div>
+                                 <span class="arrow"></span>
+                                 <div class="img">
+                                    <img src="images/img_verify_guide_02_01_step2.jpg" alt="step2">
+                                 </div>
+                                 <span class="arrow"></span>
+                                 <div class="img">
+                                    <img src="images/img_verify_guide_02_01_step3.jpg" alt="step3">
+                                 </div>
+                              </div>
+                              <ol>
+                                 <li>① <a href="https://iotdev.kt.com" target="_blank" class="textMint">https://iotdev.kt.com</a> <em class="textRed">(크롬으로 접속 권장)</em> →  PSSO 회원 가입  </li>
+                                 <li>② 사용자 등록 선택 → 승인된 PSSO ID/PW 로그인 → 회사 등록  → 사용자 등록 (1회사당 1개 ID만 생성)</li>
+                                 <li>③ 정보보호 서약서 ( 제조사 대표, 담당 개발 직원 작성 및 스캔 후 한 개의 파일로 등록)
+                                    <ul class="dotList">
+                                       <li>[사용자 등록] 내 [양식다운]을 통해 정보보호 서약서 양식을 다운로드 가능</li>
+                                       <li>kt 관계부서는 “단말품질관리팀”으로 기재</li>
+                                    </ul>
+                                 </li>
+                              </ol>
+                           </div>
+                        </div>
+                        <div class="listContent">
+                           <div class="content">
+                              <strong>2.1.2 단말 검증 요청 및 업무 지원</strong>
+                              <div class="img">
+                                 <img src="images/img_verify_guide_02_01_main.jpg" alt="단말 검증 요청 및 업무 지원">
+                              </div>
+                              <ol>
+                                 <li>1) 단말 검증 요청
+                                    <ol>
+                                       <li>① 메뉴 : 검증 → 개발지원 → 모델 등록(단말 등록) → QAT - 검증 요청</li>
+                                       <li>② 내용 : 검증대상 모델 등록, QAT / 기능 검증 요청, 검증결과 확인, 제조사 답변 등의 기능 제공</li>
+                                    </ol>
+                                 </li>
+                                 <li>2) 기타 업무지원
+                                    <ol>
+                                       <li>① 개발지원 : 사전 회의, 결함 재연, 개발 중 문의사항 등의 요청/문의 기능 제공</li>
+                                       <li>② 기술지원 : 상용화 진행 후 문의사항, VOC 확인 요청, 기술적 문의사항 등의 기능 제공</li>
+                                       <li>③ 자료 다운로드 : 규격서, 가이드, 입고문서 등의 다운로드 기능 제공</li>
+                                    </ol>
+                                 </li>
+                              </ol>
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="inner">
+            <div class="link">
+               <a href="">회사소개</a>
+               <a href="">이용약관</a>
+               <a href="">법적고지</a>
+               <a href="">개인정보처리방침</a>
+               <a href="">개인정보 이용내역</a>
+               <a href="">청소년보호정책</a>
+            </div>
+            <address>
+               <span>(주)케이티</span>
+               <span>주소 : 경기도 성남시 분당구 불정로 90 (정자동 206번지)</span>
+               <span>대표이사 : 구현모</span>
+               <span>사업자등록번호 102-81-42945</span>
+               <span>전화번호 : (02) 3473-9651~2</span>
+               <span class="copy">COPYRIGHT(C) 2007 KT CORP. ALL RIGHTS RESERVED.</span>
+            </address>
+         </div>
+      </footer>
+   </div>
+</body>
+</html>

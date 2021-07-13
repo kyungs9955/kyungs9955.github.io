@@ -6,6 +6,7 @@
    <meta name="description" content="">
    <meta name="viewport" content="width=device-width">
    <title>KT IoT Biz</title>
+   <link rel="shortcut icon" href="images/favicon.ico">
    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
    <script type="text/javascript" src="js/slick.js"></script>
    <script type="text/javascript" src="js/ui.js"></script>
@@ -14,11 +15,13 @@
 </head>
 <body>
    <div class="wrapper">
-      <header class="header pc">
+      <header class="header">
          <div class="inner">
             <div class="tnb">
-               <a href="">로그인</a>
-               <a href="">회원가입</a>
+               <div class="goButton">
+                  <a href="">KT IoT<br /> Dev</a>
+                  <div class="tooltip">KT IoT Dev 사이트로 이동합니다</div>
+               </div>
             </div>
             <div class="gnb">
                <button class="menuButton">
@@ -31,7 +34,7 @@
                      <li class="active">
                         <strong>KT IoT</strong>
                         <div class="menuContent">
-                           <ul class="depth2 inner">
+                           <ul class="depth2">
                               <li>
                                  <a href="">KT IoT 소개</a>
                                  <ul class="depth3">
@@ -86,7 +89,7 @@
                      <li>
                         <strong>Showcase</strong>
                         <div class="menuContent">
-                           <ul class="depth2 inner">
+                           <ul class="depth2">
                               <li>
                                  <a href="">모듈/모뎀</a>
                                  <ul class="depth3">
@@ -133,7 +136,7 @@
                      <li>
                         <strong>Support</strong>
                         <div class="menuContent">
-                           <ul class="depth2 inner">
+                           <ul class="depth2">
                               <li>
                                  <a href="">개발 지원</a>
                                  <ul class="depth3">
@@ -182,7 +185,7 @@
                      <li>
                         <strong>Information</strong>
                         <div class="menuContent">
-                           <ul class="depth2 inner">
+                           <ul class="depth2">
                               <li>
                                  <a href="">공유</a>
                                  <ul class="depth3">
@@ -210,21 +213,57 @@
             <div class="slick-slider">
                <div class="slick-slide">
                   <div class="bg img1"></div>
+                  <div class="visualContent">
+                     <div class="inner">
+                        <div class="title">
+                           <span>IoT 단말 개발을 위한 첫 걸음!</span>
+                           <strong>KT IoT 모듈을 소개합니다</strong>
+                        </div>
+                        <div class="content">
+                           <p>KT가 인증한 모듈리스트를 참고하시고 <br>
+                              초기에 개발품질도 확보하세요</p>
+                        </div>
+                        <div class="button">
+                           <a href="">모듈 상세보기</a>
+                        </div>
+                     </div>
+                  </div>
                </div>
                <div class="slick-slide">
                   <div class="bg img2"></div>
+                  <div class="visualContent">
+                     <div class="inner">
+                        <div class="title">
+                           <span>우리 사업에 맞는 요금제는 뭘까?</span>
+                           <strong>KT IoT 요금제 총정리!</strong>
+                        </div>
+                        <div class="content">
+                           <p>요금제와 할인제도를 한 메뉴에 모아서 보여드리니<br>
+                              꼼꼼하게 비교하세요!</p>
+                        </div>
+                        <div class="button">
+                           <a href="">요금제 상세보기</a>
+                        </div>
+                     </div>
+                  </div>
                </div>
                <div class="slick-slide">
                   <div class="bg img3"></div>
-               </div>
-            </div>
-            <div class="visualContent">
-               <div class="inner">
-                  <div class="title">KT와 함께하는 IoT 비즈니스</div>
-                  <div class="content">
-                     <p>파트너와 성공적인 사업체계를 구축하고 고객에게 더 나은 세상으로 연결해주는 새로운 IoT 세상을 위한 첫 걸음을 함께합니다.</p>
+                  <div class="visualContent">
+                     <div class="inner">
+                        <div class="title">
+                           <span>사업제안부터 개발/검증 및 출시까지</span>
+                           <strong>IoT 컨설팅 시작!</strong>
+                        </div>
+                        <div class="content">
+                           <p>아래의 버튼을 통해 회원가입 후 컨설팅을 진행하세요<br>
+                              컨설팅부터는 별도의 사이트(KT IoT Dev)로 이동하여 진행됩니다.</p>
+                        </div>
+                        <div class="button">
+                           <a href="">컨설팅 시작하기</a>
+                        </div>
+                     </div>
                   </div>
-                  <button>사업 제안하기</button>
                </div>
             </div>
          </section>
@@ -285,11 +324,12 @@
                   <a href="" class="more">더보기</a>
                </div>
                <div class="content">
+                  <!-- [i] mobile(width:767px)에서는 최대 3개까지 -->
                   <div class="slick-slider">
                      <div class="slick-slide">
-                        <a href="#" class="box">
+                        <a href="" class="box">
                            <div class="image">
-                              <img src="images/sample/img_showcase_01.png" alt="">
+                              <img src="images/sample/img_showcase_01.png" alt="NC-200A">
                            </div>
                            <div class="text">
                               <span>LTE 라우터</span>
@@ -308,9 +348,9 @@
                         </a>
                      </div>
                      <div class="slick-slide">
-                        <a href="#" class="box">
+                        <a href="" class="box">
                            <div class="image">
-                              <img src="images/sample/img_showcase_02.png" alt="">
+                              <img src="images/sample/img_showcase_02.png" alt="AB-400A">
                            </div>
                            <div class="text">
                               <span>모듈</span>
@@ -329,9 +369,9 @@
                         </a>
                      </div>
                      <div class="slick-slide">
-                        <a href="#" class="box">
+                        <a href="" class="box">
                            <div class="image">
-                              <img src="images/sample/img_showcase_03.png" alt="">
+                              <img src="images/sample/img_showcase_03.png" alt="CD-500A">
                            </div>
                            <div class="text">
                               <span>모듈</span>
@@ -350,9 +390,9 @@
                         </a>
                      </div>
                      <div class="slick-slide">
-                        <a href="#" class="box">
+                        <a href="" class="box">
                            <div class="image">
-                              <img src="images/sample/img_showcase_04.png" alt="">
+                              <img src="images/sample/img_showcase_04.png" alt="EF-100A">
                            </div>
                            <div class="text">
                               <span>모듈</span>
@@ -371,9 +411,9 @@
                         </a>
                      </div>
                      <div class="slick-slide">
-                        <a href="#" class="box">
+                        <a href="" class="box">
                            <div class="image">
-                              <img src="images/sample/img_showcase_01.png" alt="">
+                              <img src="images/sample/img_showcase_01.png" alt="NC-200A">
                            </div>
                            <div class="text">
                               <span>LTE 라우터</span>
@@ -392,9 +432,9 @@
                         </a>
                      </div>
                      <div class="slick-slide">
-                        <a href="#" class="box">
+                        <a href="" class="box">
                            <div class="image">
-                              <img src="images/sample/img_showcase_02.png" alt="">
+                              <img src="images/sample/img_showcase_02.png" alt="AB-400A">
                            </div>
                            <div class="text">
                               <span>모듈</span>
@@ -413,9 +453,9 @@
                         </a>
                      </div>
                      <div class="slick-slide">
-                        <a href="#" class="box">
+                        <a href="" class="box">
                            <div class="image">
-                              <img src="images/sample/img_showcase_03.png" alt="">
+                              <img src="images/sample/img_showcase_03.png" alt="CD-500A">
                            </div>
                            <div class="text">
                               <span>모듈</span>
@@ -434,9 +474,9 @@
                         </a>
                      </div>
                      <div class="slick-slide">
-                        <a href="#" class="box">
+                        <a href="" class="box">
                            <div class="image">
-                              <img src="images/sample/img_showcase_04.png" alt="">
+                              <img src="images/sample/img_showcase_04.png" alt="EF-100A">
                            </div>
                            <div class="text">
                               <span>모듈</span>
@@ -464,17 +504,17 @@
                <div class="content">
                   <div class="slick-slider">
                      <div class="slick-slide">
-                        <p>[중요] 공지사항 제목입니다.</p>
+                        <a href="">[중요] 공지사항 제목입니다.</a>
                         <span class="name">관리*</span>
                         <span class="date">2021-00-00</span>
                      </div>
                      <div class="slick-slide">
-                        <p>[중요] 공지사항 제목입니다.</p>
+                        <a href="">[중요] 공지사항 제목입니다.</a>
                         <span class="name">관리*</span>
                         <span class="date">2021-00-00</span>
                      </div>
                      <div class="slick-slide">
-                        <p>[중요] 공지사항 제목입니다.</p>
+                        <a href="">[중요] 공지사항 제목입니다.</a>
                         <span class="name">관리*</span>
                         <span class="date">2021-00-00</span>
                      </div>

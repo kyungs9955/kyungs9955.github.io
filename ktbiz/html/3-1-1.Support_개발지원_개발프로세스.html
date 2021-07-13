@@ -14,11 +14,13 @@
 </head>
 <body>
    <div class="wrapper">
-      <header class="header pc">
+      <header class="header">
          <div class="inner">
             <div class="tnb">
-               <a href="">로그인</a>
-               <a href="">회원가입</a>
+               <div class="goButton">
+                  <a href="">KT IoT<br /> Dev</a>
+                  <div class="tooltip">KT IoT Dev 사이트로 이동합니다</div>
+               </div>
             </div>
             <div class="gnb">
                <button class="menuButton">
@@ -31,7 +33,7 @@
                      <li>
                         <strong>KT IoT</strong>
                         <div class="menuContent">
-                           <ul class="depth2 inner">
+                           <ul class="depth2">
                               <li>
                                  <a href="">KT IoT 소개</a>
                                  <ul class="depth3">
@@ -86,7 +88,7 @@
                      <li>
                         <strong>Showcase</strong>
                         <div class="menuContent">
-                           <ul class="depth2 inner">
+                           <ul class="depth2">
                               <li>
                                  <a href="">모듈/모뎀</a>
                                  <ul class="depth3">
@@ -133,7 +135,7 @@
                      <li class="active">
                         <strong>Support</strong>
                         <div class="menuContent">
-                           <ul class="depth2 inner">
+                           <ul class="depth2">
                               <li>
                                  <a href="">개발 지원</a>
                                  <ul class="depth3">
@@ -182,7 +184,7 @@
                      <li>
                         <strong>Information</strong>
                         <div class="menuContent">
-                           <ul class="depth2 inner">
+                           <ul class="depth2">
                               <li>
                                  <a href="">공유</a>
                                  <ul class="depth3">
@@ -239,32 +241,27 @@
             <section class="section">
                <div class="inner">
                   <div class="process">
-                     <ul>
-                        <li>
-                           <div class="box">
-                              <strong>STEP 1</strong>
-                              <span>사용자 등록</span>
-                           </div>
-                        </li>
-                        <li>
-                           <div class="box">
-                              <strong>STEP 2</strong>
-                              <span>사업 제안</span>
-                           </div>
-                        </li>
-                        <li>
-                           <div class="box">
-                              <strong>STEP 3</strong>
-                              <span>PID 발급</span>
-                           </div>
-                        </li>
-                        <li class="active">
-                           <div class="box">
-                              <strong>STEP 4</strong>
-                              <span>개발 지원</span>
-                           </div>
-                        </li>
-                     </ul>
+                     <div class="step pc">
+                        <div class="box">
+                           <strong>STEP 1</strong>
+                           <span>사용자 등록</span>
+                        </div>
+                        <span class="arrow"></span>
+                        <div class="box">
+                           <strong>STEP 2</strong>
+                           <span>사업 제안</span>
+                        </div>
+                        <span class="arrow"></span>
+                        <div class="box">
+                           <strong>STEP 3</strong>
+                           <span>PID 발급</span>
+                        </div>
+                        <span class="arrow"></span>
+                        <div class="box active">
+                           <strong>STEP 4</strong>
+                           <span>개발 지원</span>
+                        </div>
+                     </div>
                      <div class="content">
                         <img class="pc" src="images/img_support_process.jpg" alt="개발 지원">
                         <img class="mobile" src="images/img_support_process_mobile.jpg" alt="개발 지원">

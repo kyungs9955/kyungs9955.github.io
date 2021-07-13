@@ -14,11 +14,13 @@
 </head>
 <body>
    <div class="wrapper">
-      <header class="header pc">
+      <header class="header">
          <div class="inner">
             <div class="tnb">
-               <a href="">로그인</a>
-               <a href="">회원가입</a>
+               <div class="goButton">
+                  <a href="">KT IoT<br /> Dev</a>
+                  <div class="tooltip">KT IoT Dev 사이트로 이동합니다</div>
+               </div>
             </div>
             <div class="gnb">
                <button class="menuButton">
@@ -31,7 +33,7 @@
                      <li>
                         <strong>KT IoT</strong>
                         <div class="menuContent">
-                           <ul class="depth2 inner">
+                           <ul class="depth2">
                               <li>
                                  <a href="">KT IoT 소개</a>
                                  <ul class="depth3">
@@ -86,7 +88,7 @@
                      <li class="active">
                         <strong>Showcase</strong>
                         <div class="menuContent">
-                           <ul class="depth2 inner">
+                           <ul class="depth2">
                               <li>
                                  <a href="">모듈/모뎀</a>
                                  <ul class="depth3">
@@ -133,7 +135,7 @@
                      <li>
                         <strong>Support</strong>
                         <div class="menuContent">
-                           <ul class="depth2 inner">
+                           <ul class="depth2">
                               <li>
                                  <a href="">개발 지원</a>
                                  <ul class="depth3">
@@ -182,7 +184,7 @@
                      <li>
                         <strong>Information</strong>
                         <div class="menuContent">
-                           <ul class="depth2 inner">
+                           <ul class="depth2">
                               <li>
                                  <a href="">공유</a>
                                  <ul class="depth3">
@@ -275,12 +277,9 @@
                            </li>
                            <li>
                               <strong>Interface</strong>
-                              <div class="select">
-                                 <select id="select" required>
-                                    <option value="">Interface를 선택하세요.</option>
-                                    <option value="">전체</option>
-                                 </select>
-                                 <label for="select">Interface</label>
+                              <div class="input">
+                                 <label for="input">Interface</label>
+                                 <input type="text" id="input" placeholder="Interface를 입력하세요.">
                               </div>
                            </li>
                         </ul>
@@ -311,6 +310,7 @@
                      </div>
                      <div class="tabContent">
                         <ul>
+                           <!-- [i] pc는 9개 / mobile(width:767px)에서는 10개 -->
                            <li>
                               <div class="item">
                                  <div class="img">
@@ -318,7 +318,7 @@
                                  </div>
                                  <div class="tit">
                                     <strong>PM-L410K</strong>
-                                    <a href="#">제조사 홈</a>
+                                    <a href="">제조사 홈</a>
                                  </div>
                                  <div class="info">
                                     <ul>
@@ -364,7 +364,7 @@
                                  </div>
                                  <div class="tit">
                                     <strong>PM-L410K</strong>
-                                    <a href="#">제조사 홈</a>
+                                    <a href="">제조사 홈</a>
                                  </div>
                                  <div class="info">
                                     <ul>
@@ -410,7 +410,7 @@
                                  </div>
                                  <div class="tit">
                                     <strong>PM-L410K</strong>
-                                    <a href="#">제조사 홈</a>
+                                    <a href="">제조사 홈</a>
                                  </div>
                                  <div class="info">
                                     <ul>
@@ -456,7 +456,7 @@
                                  </div>
                                  <div class="tit">
                                     <strong>PM-L410K</strong>
-                                    <a href="#">제조사 홈</a>
+                                    <a href="">제조사 홈</a>
                                  </div>
                                  <div class="info">
                                     <ul>
@@ -502,7 +502,7 @@
                                  </div>
                                  <div class="tit">
                                     <strong>PM-L410K</strong>
-                                    <a href="#">제조사 홈</a>
+                                    <a href="">제조사 홈</a>
                                  </div>
                                  <div class="info">
                                     <ul>
@@ -548,7 +548,7 @@
                                  </div>
                                  <div class="tit">
                                     <strong>PM-L410K</strong>
-                                    <a href="#">제조사 홈</a>
+                                    <a href="">제조사 홈</a>
                                  </div>
                                  <div class="info">
                                     <ul>
@@ -594,7 +594,7 @@
                                  </div>
                                  <div class="tit">
                                     <strong>PM-L410K</strong>
-                                    <a href="#">제조사 홈</a>
+                                    <a href="">제조사 홈</a>
                                  </div>
                                  <div class="info">
                                     <ul>
@@ -640,7 +640,7 @@
                                  </div>
                                  <div class="tit">
                                     <strong>PM-L410K</strong>
-                                    <a href="#">제조사 홈</a>
+                                    <a href="">제조사 홈</a>
                                  </div>
                                  <div class="info">
                                     <ul>
@@ -686,7 +686,7 @@
                                  </div>
                                  <div class="tit">
                                     <strong>PM-L410K</strong>
-                                    <a href="#">제조사 홈</a>
+                                    <a href="">제조사 홈</a>
                                  </div>
                                  <div class="info">
                                     <ul>
@@ -729,6 +729,7 @@
                      </div>
                      <div class="tabPage">
                         <div class="pagination">
+                           <!-- [i] 이전/다음 페이지 없을 시 disabled 추가 -->
                            <a href="" class="arrow first disabled"></a>
                            <a href="" class="arrow prev disabled"></a>
                            <a href="" class="on">1</a>

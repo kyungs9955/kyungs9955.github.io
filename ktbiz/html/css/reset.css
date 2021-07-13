@@ -1,5 +1,96 @@
 @charset "utf-8";
 
+/* font style */
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Noto Sans KR');
+   src: url(../font/NotoSansKR-Regular.otf),
+      url(../font/NotoSansKR-Regular.otf) format('embedded-opentype'),
+      url(../font/NotoSansKR-Regular.otf) format('truetype');
+}
+
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Noto Sans KR');
+   src: url(../font/NotoSansKR-Medium.otf),
+      url(../font/NotoSansKR-Medium.otf) format('embedded-opentype'),
+      url(../font/NotoSansKR-Medium.otf) format('truetype');
+}
+
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Noto Sans KR');
+   src: url(../font/NotoSansKR-Bold.otf),
+      url(../font/NotoSansKR-Bold.otf) format('embedded-opentype'),
+      url(../font/NotoSansKR-Bold.otf) format('truetype');
+}
+
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Noto Sans KR');
+   src: url(../font/NotoSansKR-Medium.otf),
+      url(../font/NotoSansKR-Medium.otf) format('embedded-opentype'),
+      url(../font/NotoSansKR-Medium.otf) format('truetype');
+}
+
+@font-face {
+   font-family: '맑은 고딕';
+   font-style: normal;
+   font-weight: normal;
+   src: local('맑은 고딕');
+   src: url(../font/MalgunGothic.eot),
+      url(../font/MalgunGothic.eot?#iefix) format('embedded-opentype'),
+      url(../font/MalgunGothic.TTF) format('truetype');
+}
+
+@font-face {
+   font-family: 'Nanum Barun Gothic';
+   font-style: normal;
+   font-weight: normal;
+   src: url('Nanum Barun Gothic');
+   src: url(../font/NanumBarunGothic.otf),
+   url(../font/NanumBarunGothic.otf) format('embedded-opentype'),
+   url(../font/NanumBarunGothic.otf) format('truetype');
+}
+
+@font-face {
+   font-family: 'NanumSquare';
+   font-style: normal;
+   font-weight: normal;
+   src: url('Nanum Square');
+   src: url(../font/NanumSquareR.otf),
+   url(../font/NanumSquareR.otf) format('embedded-opentype'),
+   url(../font/NanumSquareR.otf) format('truetype');
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: normal;
+   src: url('Montserrat-Medium');
+   src: url(../font/Montserrat-Medium.ttf),
+   url(../font/Montserrat-Medium.ttf) format('embedded-opentype'),
+   url(../font/Montserrat-Medium.ttf) format('truetype');
+}
+
+@font-face {
+   font-family: 'Montserrat Regular';
+   font-style: normal;
+   font-weight: normal;
+   src: url('Montserrat-Regular');
+   src: url(../font/Montserrat-Regular.ttf),
+   url(../font/Montserrat-Regular.ttf) format('embedded-opentype'),
+   url(../font/Montserrat-Regular.ttf) format('truetype');
+}
+
 * {-webkit-tap-highlight-color: rgba(0, 0, 0, 0)}
 
 html, body, div,

@@ -181,7 +181,7 @@ body {width:100%}
 .mainShowcase .slick-dots li.slick-active button {background-color:#00C0AA}
 .mainShowcase .slick-slide {padding:30px;outline:none}
 .mainShowcase .box {overflow:hidden;display:block;border-radius:15px;box-shadow:0px 2px 28px 0px rgba(0,0,0,0.16)}
-.mainShowcase .box .image {display:flex;align-items:center;justify-content:center;height:210px;background-image:linear-gradient(to bottom, #fff 80%, rgba(0,0,0,0.05))}
+.mainShowcase .box .image {display:flex;align-items:center;justify-content:center;height:210px;background-image:linear-gradient(to bottom, #fff 0%, rgba(0,0,0,0.05) 80%)}
 .mainShowcase .box .image img {width:120px;height:120px;object-fit:contain}
 .mainShowcase .box .text {padding:30px}
 .mainShowcase .box .text > span {display:block;font-size:1.8rem;color:#2cbbb6}
@@ -800,7 +800,7 @@ html {font-size:8px}
 .mainShowcase .title .more::before {width:16px}
 .mainShowcase .title .more::after {height:16px}
 .mainShowcase .box {box-shadow:0px 2px 18px 0px rgb(0 0 0 / 16%)}
-.mainShowcase .box .image {height:170px;background-image:linear-gradient(to bottom, #fff 80%, rgba(0,0,0,0.025))}
+.mainShowcase .box .image {height:170px}
 .mainShowcase .box .image img {width:120px;height:120px}
 .mainShowcase .box .text {padding:20px}
 .mainShowcase .slick-arrow {top:50%;border-radius:100%;background-color:#fff;transform:translateY(-50%);box-shadow:0px 0 20px 0px rgba(0,0,0,0.1)}

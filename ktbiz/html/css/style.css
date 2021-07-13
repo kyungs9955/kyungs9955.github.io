@@ -62,7 +62,7 @@ body {width:100%}
 .header.pc.fixed .gnb .logo::before {background-position-y:-28px}
 .header.pc.fixed .gnb li a {color:#333;white-space:nowrap}  
 .header.pc.fixed .gnb .depth1 > li > strong {color:#333}
-.header.mobile {height:60px;transition:box-shadow .3s;background:blue}
+.header.mobile {height:60px;transition:box-shadow .3s}
 .header.mobile::before {content:'';position:absolute;top:0;left:0;display:block;width:100%;height:0;background-color:#fff;transition:height .3s}
 .header.mobile .tnb {display:none}
 .header.mobile .gnb {display:flex;align-items:center;justify-content:center;height:60px;box-sizing:border-box}

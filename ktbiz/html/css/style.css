@@ -181,7 +181,7 @@ body {width:100%}
 .mainShowcase .slick-dots li.slick-active button {background-color:#00C0AA}
 .mainShowcase .slick-slide {padding:30px;outline:none}
 .mainShowcase .box {overflow:hidden;display:block;border-radius:15px;box-shadow:0px 2px 28px 0px rgba(0,0,0,0.16)}
-.mainShowcase .box .image {display:flex;align-items:center;justify-content:center;height:210px;background-image:linear-gradient(to bottom, #fff 80%, #f9f9f9 95%)}
+.mainShowcase .box .image {display:flex;align-items:center;justify-content:center;height:210px;background-image:linear-gradient(to bottom, #fff 0%, #fff 80%, #f9f9f9 95%)}
 .mainShowcase .box .image img {width:120px;height:120px;object-fit:contain}
 .mainShowcase .box .text {padding:30px}
 .mainShowcase .box .text > span {display:block;font-size:1.8rem;color:#2cbbb6}

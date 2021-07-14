@@ -859,7 +859,7 @@ html {font-size:8px}
 .subMenu + .searchContainer .searchContent li:last-child .calendar {width:calc(50% - 40px)}
 .searchContainer .searchTitle button::before {transform:scale(0.8)}
 .searchContainer .searchTitle button.close::before {transform:rotate(180deg) scale(0.8)}
-.searchContainer .searchContent li strong {width:60px}
+.searchContainer .searchContent li strong {width:60px;margin:0}
 .searchContainer .searchContent li strong + div {width:calc(100% - 60px)}
 .guideContainer {margin-top:40px}
 .guideContainer .inner {padding-top:25px}

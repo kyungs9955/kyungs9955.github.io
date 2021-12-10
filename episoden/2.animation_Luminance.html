@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width">
+   <title>Episoden</title>
+   <link rel="shortcut icon" href="images/favicon.ico">
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <script>
+      $(document).ready(function(){
+         setTimeout(function() {
+            $('.enjoy').fadeOut()
+         }, 1000);
+         setTimeout(function() {
+            $('.luminance').fadeIn()
+         }, 2000);
+      })
+   </script>
+   <style>
+      .luminance {animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;}
+      .eventRoomPage.topicEvent .localVideo .topic p.luminance {display:none}
+      @keyframes reveal {
+         80%{
+            letter-spacing: 8px;
+         }
+         100% {
+            background-size: 300% 300%;
+         }
+      }
+      @keyframes glow {
+         40% {
+            text-shadow: 0 0 8px #000;
+         }
+      }
+   </style>
+</head>
+<body>
+   <div class="wrapper">
+      <div class="eventWrapper">
+         <div class="eventRoomPage topicEvent">
+            <section class="localVideo">
+               <div class="inner">
+                  <div class="video">
+                     <video style="background:url('images/sample/sample_user02.png') no-repeat center center;background-size:cover"></video>
+                     <div class="name">
+                        <img src="https://flagcdn.com/h20/us.png" height="10" alt="United States">
+                        <span>Jennifer</span>
+                     </div>
+                  </div>
+                  <!-- [i] 텍스트 출력 -->
+                  <div class="topic">
+                     <p class="enjoy">Enjoy the topic!</p>
+                     <p class="luminance">Lorem ipsum dolor sit amet, et aperiam quaestio vel. Mel cu habeo virtute nostrum?</p>
+                  </div>
+               </div>
+            </section>
+            <section class="mainVideo">
+               <div class="video" style="width:1280px">
+                  <video style="background:url('images/sample/sample_user01.png') no-repeat center center;background-size:cover"></video>
+               </div>
+               <div class="timer">
+                  <span>Time left</span>
+                  <strong>07:00</strong>
+               </div>
+               <div class="inner">
+                  <div class="menu">
+                     <ul>
+                        <li>
+                           <button class="mic" data-title="Mute"></button>
+                        </li>
+                        <li>
+                           <button class="message" data-title="Message"></button>
+                        </li>
+                        <li>
+                           <button class="profile" data-title="Profile"></button>
+                        </li>
+                        <li>
+                           <button class="report" data-title="Report"></button>
+                        </li>
+                        <li>
+                           <button class="setting" data-title="Setting"></button>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width">
+   <title>Episoden</title>
+   <link rel="shortcut icon" href="images/favicon.ico">
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+   <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <style>
+      .topic {overflow:hidden;position:relative}
+      .confetti > .particle {
+         opacity: 0;
+         position: absolute;
+         -webkit-animation: confetti 3s ease-in infinite;
+                  animation: confetti 3s ease-in infinite;
+         }
+            body .confetti > .particle.c1 {
+            background-color: rgb(239, 241, 255, 1);
+         }
+            body .confetti > .particle.c2 {
+            background-color: rgb(155, 81, 224, 0.5);
+         }
+         @keyframes confetti {
+            0% {
+               opacity: 0;
+               transform: translateY(0%) rotate(0deg);
+            }
+            10% {
+               opacity: 1;
+            }
+            35% {
+               transform: translateY(-800%) rotate(270deg);
+            }
+            80% {
+               opacity: 1;
+            }
+            100% {
+               opacity: 0;
+               transform: translateY(2000%) rotate(1440deg);
+            }
+         }
+         @media screen and (max-width: 1024px) {
+            .topic {height:100% !important}
+            body .confetti > .particle.c1 {background-color: rgb(239, 241, 255, 0.2);}
+         }
+   </style>
+   <script>
+      $(document).ready(function(){
+         function initparticles() {
+            confetti();
+         }
+         function confetti() {
+            $.each($(".confetti"), function () {
+               var confetticount = ($(this).width() / 50) * 10;
+               for (var i = 0; i <= confetticount; i++) {
+                  $(this).append(
+                     '<span class="particle c' +
+                        $.rnd(1, 2) +
+                        '" style="top:' +
+                        $.rnd(10, 50) +
+                        "%; left:" +
+                        $.rnd(0, 100) +
+                        "%;width:" +
+                        $.rnd(6, 8) +
+                        "px; height:" +
+                        $.rnd(3, 4) +
+                        "px;animation-delay: " +
+                        $.rnd(0, 30) / 10 +
+                        's;"></span>'
+                  );
+               }
+            });
+         }
+         jQuery.rnd = function (m, n) {
+            m = parseInt(m);
+            n = parseInt(n);
+            return Math.floor(Math.random() * (n - m + 1)) + m;
+         };
+         initparticles();
+      });
+   </script>
+</head>
+<body>
+   <div class="wrapper">
+      <div class="eventWrapper">
+         <div class="eventRoomPage topicEvent">
+            <section class="localVideo">
+               <div class="inner">
+                  <div class="video">
+                     <video style="background:url('images/sample/sample_user02.png') no-repeat center center;background-size:cover"></video>
+                     <div class="name">
+                        <img src="https://flagcdn.com/h20/us.png" height="10" alt="United States">
+                        <span>Jennifer</span>
+                     </div>
+                  </div>
+                  <!-- [i] 텍스트 출력 -->
+                  <div class="topic confetti">
+                     <p class="">Lorem ipsum dolor sit amet, et aperiam quaestio vel. Mel cu habeo virtute nostrum? </p>
+                  </div>
+               </div>
+            </section>
+            <section class="mainVideo">
+               <div class="video" style="width:1280px">
+                  <video style="background:url('images/sample/sample_user01.png') no-repeat center center;background-size:cover"></video>
+               </div>
+               <div class="timer">
+                  <span>Time left</span>
+                  <strong>07:00</strong>
+               </div>
+               <div class="inner">
+                  <div class="menu">
+                     <ul>
+                        <li>
+                           <button class="mic" data-title="Mute"></button>
+                        </li>
+                        <li>
+                           <button class="message" data-title="Message"></button>
+                        </li>
+                        <li>
+                           <button class="profile" data-title="Profile"></button>
+                        </li>
+                        <li>
+                           <button class="report" data-title="Report"></button>
+                        </li>
+                        <li>
+                           <button class="setting" data-title="Setting"></button>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

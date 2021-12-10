@@ -22,9 +22,10 @@
       })
    </script>
    <style>
-      .text {position:relative;width:100%;display:flex;text-align:center;align-items:center}
+      .text {position:relative;width:90%;display:flex;text-align:center;align-items:center}
       .text.active::before {content:'';position:absolute;top:0;left:0;display:block;width:0;height:100%;background-color:var(--point-color);animation: bar 2s;z-index:1}
       .text p {overflow:hidden;display:-webkit-box;width:100%;text-align:center;word-break:break-word;font-size:2rem;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+      .eventRoomPage.topicEvent .localVideo .topic p {width:100%}
       .eventRoomPage.topicEvent .localVideo .topic p.enjoy {display:none}
       .eventRoomPage.topicEvent .localVideo .topic p.bar {display:none}
       @media screen and (max-width: 1024px) {

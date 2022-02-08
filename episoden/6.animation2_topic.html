@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width">
+   <title>Episoden</title>
+   <link rel="shortcut icon" href="images/favicon.ico">
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <style>
+      .topic {overflow:hidden;position:relative}
+      .topic p {overflow:initial !important}
+      .topic span {display:inline-block;min-width:10px;text-align:center;transition:all ease 0.9s;opacity:0}
+      @media screen and (max-width: 1024px){
+         .topic {height:100%}
+      }
+   </style>
+   <script>
+      $(document).ready(function(){
+         function _(x) {
+            return document.querySelectorAll(x);
+         }
+
+         function r(min = 0, max = 0) {
+            return min + Math.round(Math.random() * (max - min));
+         }
+
+         //wrap each letter with <span>
+         _("p.ready")[0].innerHTML =
+         "<span>" +
+         _("p.ready")[0].innerHTML.trim().split("").join("</span><span>") +
+         "</span>";
+
+         var frame = 0;
+
+         setInterval(function () {
+         if (frame % 4 == 0)
+            for (var i = 0; i < _("p.ready span").length; i++) {
+               _("p.ready span")[i].style.opacity = 0;
+               _("p.ready span")[i].style.transform =
+               "translate3d(" +
+               r(-150) +
+               "px, " +
+               r(-150) +
+               "px, 0px) rotate(" +
+               r(-30, 30) +
+               "deg)";
+            }
+         else if (frame % 4 == 3 )
+            for (var i = 0; i < _("p.ready span").length; i++) {
+               _("p.ready span")[i].style.opacity = 0;
+               _("p.ready span")[i].style.transform =
+               "translate3d(" +
+               r(150) +
+               "px, " +
+               r(150) +
+               "px, 0px) rotate(" +
+               r(-30, 30) +
+               "deg)";
+            }
+         else
+            for (var i = 0; i < _("p.ready span").length; i++) {
+               _("p.ready span")[i].style.transform = "";
+               _("p.ready span")[i].style.opacity = 1;
+            }
+         frame++;
+         }, 1050);
+      });
+   </script>
+</head>
+<body>
+   <div class="wrapper">
+      <div class="eventWrapper">
+         <div class="eventRoomPage topicEvent">
+            <section class="localVideo">
+               <div class="inner">
+                  <div class="video">
+                     <video style="background:url('images/sample/sample_user02.png') no-repeat center center;background-size:cover"></video>
+                     <div class="name">
+                        <img src="https://flagcdn.com/h20/us.png" height="10" alt="United States">
+                        <span>Jennifer</span>
+                     </div>
+                  </div>
+                  <!-- [i] 텍스트 출력 -->
+                  <div class="topic">
+                     <p class="ready">Enjoy the Topic!</p>
+                  </div>
+               </div>
+            </section>
+            <section class="mainVideo">
+               <div class="video" style="width:1280px">
+                  <video style="background:url('images/sample/sample_user01.png') no-repeat center center;background-size:cover"></video>
+                  <div class="name">
+                     <img src="https://flagcdn.com/h20/us.png" height="13" alt="United States">
+                     <span>Christine</span>
+                  </div>
+               </div>
+               <div class="timer">
+                  <span>Time left</span>
+                  <strong>07:00</strong>
+               </div>
+               <div class="inner">
+                  <div class="menu">
+                     <ul>
+                        <li>
+                           <button class="mic" data-title="Mute"></button>
+                        </li>
+                        <li>
+                           <button class="message" data-title="Message"></button>
+                        </li>
+                        <li>
+                           <button class="profile" data-title="Profile"></button>
+                        </li>
+                        <li>
+                           <button class="report" data-title="Report"></button>
+                        </li>
+                        <li>
+                           <button class="setting" data-title="Setting"></button>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

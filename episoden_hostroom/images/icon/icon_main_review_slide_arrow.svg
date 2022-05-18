@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 67 67" style="enable-background:new 0 0 67 67;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#a);}
+	.st1{display:none;fill-rule:evenodd;clip-rule:evenodd;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st3{fill:#9B51E0;}
+</style>
+<filter  filterUnits="objectBoundingBox" height="282.1%" id="a" width="282.1%" x="-91%" y="-88.1%">
+	<feOffset  dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+	<feGaussianBlur  in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="20"></feGaussianBlur>
+	<feColorMatrix  in="shadowBlurOuter1" values="0 0 0 0 0.596078431 0 0 0 0 0.298039216 0 0 0 0 0.866666667 0 0 0 0.2 0">
+		</feColorMatrix>
+</filter>
+<g>
+	<g transform="translate(40 38)">
+		<g class="st0">
+			<circle id="b_00000129927465758975255950000005965655681325409929_" class="st1" cx="-6.5" cy="-4.5" r="33.5"/>
+		</g>
+		<g>
+			<circle id="b_00000074403960673184513490000016352051780642417320_" class="st2" cx="-6.5" cy="-4.5" r="33.5"/>
+		</g>
+	</g>
+	<path class="st3" d="M36.6,28.3l8.9,4.7l-9.1,4.3l0.1-4l-14-0.3L22,33l0-1l0.5,0l14,0.3L36.6,28.3L36.6,28.3z"/>
+</g>
+</svg>

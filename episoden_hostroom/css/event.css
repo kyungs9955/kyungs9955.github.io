@@ -32,7 +32,6 @@
 .eventWrapper .video {overflow:hidden;position:relative;width:100%;height:100%;max-width:100%;max-height:100%;box-sizing:border-box}
 .eventWrapper .video video {width:calc(100% + 2px);height:calc(100% + 2px);margin:-1px 0 0 -1px;object-fit:cover}
 .eventWrapper .video video.local {transform:scaleX(-1);-webkit-transform:scaleX(-1)}
-.eventWrapper .video video.vertical {object-fit:contain}
 .eventWrapper .volume {display:flex;justify-content:center;align-items:flex-end}
 .eventWrapper .volume .percent {display:flex;align-items:flex-end;height:100%;box-sizing:border-box}
 .eventWrapper .volume i {position:relative;display:block;width:2px;height:50%;border-radius:1px}
@@ -45,10 +44,12 @@
 .eventWrapper .volume i:nth-child(5)::before {height:60%;animation-duration:.6s}
 .eventWrapper .volume i:nth-child(6)::before {height:90%;animation-duration:.3s}
 .eventWrapper .volume.none i::before {height:4px !important;background-color:var(--sub-color)} 
-.eventWrapper .mute::after {content:'';display:inline-block;width:18px;height:21px;margin-left:10px;vertical-align:text-bottom;background:url('../images/icon/icon_mute.svg') no-repeat 0 0;background-size:cover;filter:drop-shadow(0 0 2px rgb(0 0 0 / 50%))}
 .eventWrapper .video .name {position:absolute;display:flex;align-items:center;white-space:nowrap;font-weight:500;color:#fff;text-shadow:0 0 2px rgb(0 0 0 / 50%)}
 .eventWrapper .video .name span {margin-left:2rem}
 .eventWrapper .video .name strong {color:rgba(255,255,255,0.5)}
+.eventWrapper .mute::after {content:'';display:inline-block;width:18px;height:21px;margin-left:10px;vertical-align:text-bottom;background:url('../images/icon/icon_mute.svg') no-repeat 0 0;background-size:cover;filter:drop-shadow(0 0 2px rgb(0 0 0 / 50%))}
+.eventWrapper .video .mute {position:absolute;bottom:10px;right:10px}
+.eventWrapper .video .mute::after {width:16px;height:19px;margin:0}
 .eventWrapper .timer {position:absolute;bottom:20px;left:30px;line-height:70px;font-size:1.6rem;color:#fff;text-shadow:0 0 2px rgb(0 0 0 / 50%);z-index:2}
 .eventWrapper .timer span {display:inline-block;margin-right:6px;color:rgba(255,255,255,0.5)}
 .eventWrapper .timer span.session {display:block;margin-bottom:5px;color:#fff}
@@ -83,20 +84,18 @@
 .eventWrapper .menu .tooltip h2 span {display:inline-block;margin-left:1rem;font-size:1.4rem;color:var(--point-color)}
 .eventWrapper .menu .tooltip .modalContent {position:relative;padding:1.5rem;border-radius:3px}
 .eventWrapper .menu .tooltip::after {content:'';position:absolute;bottom:-12px;right:30px;display:block;border:6px solid transparent;border-top-color:#fff}
-
-@media screen and (max-width: 1024px) {
-	.eventWrapper .video .name span {margin-left:1rem}
-	.eventWrapper .menu .reportTooltip {width:270px;padding:1rem;color:#fff;background-color:rgba(0,0,0,0.5)}
-	.eventWrapper .menu .reportTooltip::after {border-top-color:rgba(0,0,0,0.5)}
-}
-@media screen and (max-width: 767px) {
-	.eventWrapper .mainVideo .menu {width:100%}
-	.eventWrapper .mainVideo .menu > ul {justify-content:space-around}
-	.eventWrapper .mainVideo .menu > ul > li + li {margin:0}
-}
 @keyframes volume {
 	0% {height:1px}
 	100% {height:100%}
+}
+@media screen and (max-width: 1024px) {
+	.eventWrapper .video .name {bottom:6px;left:6px}
+	.eventWrapper .video .name span {margin-left:1rem}
+	.eventWrapper .mute::after {width:13px;height:16px;margin-left:6px}
+	.eventWrapper .video .mute {bottom:6px;right:6px}
+}
+@media screen and (max-width: 767px) {
+	.eventWrapper .video .mute::after {width:14px;height:16px}
 }
 
 .entrancePage {display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;height:100%;padding:2rem 0;box-sizing:border-box}
@@ -178,15 +177,12 @@
 	.loadingPage section.time p {font-size:1.4rem}
 	.loadingPage section.time span {font-size:1.4rem}
 }
-
 .eventRoomPage {overflow-y:hidden;width:100%;height:100%}
 .eventRoomPage > section {display:flex;justify-content:center}
 .eventRoomPage .localVideo {width:100%;height:180px}
 .eventRoomPage .localVideo .inner {display:flex;width:100%;justify-content:center;box-sizing:border-box}
 .eventRoomPage .localVideo .video {max-width:246px}
-.eventRoomPage .localVideo .video .name {bottom:1rem;left:1rem;font-size:1.4rem}
-.eventRoomPage .localVideo .mute {position:absolute;bottom:1rem;right:1rem}
-.eventRoomPage .localVideo .mute::after {width:16px;height:19px;margin:0}
+.eventRoomPage .localVideo .video .name {bottom:10px;left:10px;font-size:1.4rem}
 .eventRoomPage .localVideo .goTopic {position:fixed;top:200px;text-align:center;color:#fff;text-shadow:0 0 2px rgb(0 0 0 / 50%);z-index:1}
 .eventRoomPage .localVideo .goTopic p {font-weight:500;font-size:1.4rem}
 .eventRoomPage .localVideo .goTopic strong {display:block;font-weight:700}
@@ -198,6 +194,7 @@
 .eventRoomPage .mainVideo .video .hostTimer {position:absolute;top:10px;right:20px}
 .eventRoomPage .mainVideo .video .hostTimer span {font-family:'Montserrat';font-weight:700;font-size:4rem;color:#fff}
 .eventRoomPage .mainVideo .video.play {width:100%;max-width:100%}
+.eventRoomPage .mainVideo .video.play video {object-fit:contain}
 .eventRoomPage .mainVideo .inner {position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;box-sizing:border-box}
 .eventRoomPage .mainVideo .mute {margin:3rem 0;text-align:center;font-size:1.6rem;color:#fff;text-shadow:0 0 2px rgb(0 0 0 / 50%)}
 .eventRoomPage .mainVideo .goSession {position:absolute;bottom:110px;right:30px;padding:2rem 4rem;text-align:center;border-radius:10px;background-color:#fff}
@@ -228,7 +225,7 @@
 .eventRoomPage .mainVideo .chatting .input button[disabled] {opacity:0.5}
 .eventRoomPage.topicEvent .localVideo {height:220px}
 .eventRoomPage.topicEvent .localVideo .inner {flex-direction:column;align-items:center}
-.eventRoomPage.topicEvent .localVideo .video {max-width:182px;height:140px}
+.eventRoomPage.topicEvent .localVideo .video {max-width:182px;height:140px;}
 .eventRoomPage.topicEvent .localVideo .topic {display:flex;align-items:center;justify-content:center;width:100%;height:80px;font-weight:500;background:#fff}
 .eventRoomPage.topicEvent .localVideo .topic p {overflow:hidden;display:-webkit-box;width:90%;text-align:center;word-break:break-word;font-size:2rem;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 .eventRoomPage.topicEvent .mainVideo {height:calc(100% - 220px)}
@@ -272,17 +269,16 @@
 	100% {background-color:#dcdcdc}
 }
 @media screen and (max-width: 1024px) {
-	.eventRoomPage .menu {position:relative;bottom:0;right:0;transform:translate(0)}
-	.eventRoomPage .timer {left:auto;bottom:10px;right:10px;line-height:normal}
-	.eventRoomPage .mute::after {width:13px;height:16px;margin-left:6px}
 	.eventRoomPage .localVideo {position:absolute;top:0;left:0;height:auto;justify-content:flex-start;z-index:1}
 	.eventRoomPage .localVideo .inner {justify-content:flex-start;align-items:center;padding:1rem}
-	.eventRoomPage .localVideo .video {overflow:hidden;width:22vw;height:16vw;max-width:none;min-width:73px;min-height:93px;border-radius:1rem}
+	.eventRoomPage .localVideo .video {overflow:hidden;width:22vw;height:16vw;max-width:none;min-width:73px;min-height:93px;border-radius:10px}
+	.eventRoomPage .localVideo .video::before {display:none}
 	.eventRoomPage .localVideo .video .name {display:none}
-	.eventRoomPage .localVideo .mute {bottom:6px;right:6px}
 	.eventRoomPage .localVideo .goTopic {position:initial;flex:1}
 	.eventRoomPage .mainVideo {height:100%}
 	.eventRoomPage .mainVideo .video .name {top:auto;bottom:10px;left:14px}
+	.eventRoomPage .mainVideo .video .name span {margin-left:1rem}
+	.eventRoomPage .mainVideo .timer {left:auto;bottom:10px;right:10px;line-height:normal}
 	.eventRoomPage .mainVideo .inner {padding:1rem 14px 5rem}
 	.eventRoomPage .mainVideo .goSession {bottom:auto;right:auto;top:3rem;left:0;width:100%;padding:0;color:#fff;text-shadow:0 0 2px rgb(0 0 0 / 50%);background-color:transparent;z-index:1}
 	.eventRoomPage .mainVideo .goSession strong {font-size:1.6rem;color:#fff}
@@ -290,6 +286,9 @@
 	.eventRoomPage .mainVideo .waitingRoom p {font-size:1.6rem}
 	.eventRoomPage .mainVideo .chatting {width:100%}
 	.eventRoomPage .mainVideo .chatting .content {padding-top:10px}
+	.eventRoomPage .mainVideo .menu {position:relative;bottom:0;right:0;transform:translate(0)}
+	.eventRoomPage .mainVideo .menu .reportTooltip {width:270px;padding:1rem;color:#fff;background-color:rgba(0,0,0,0.5)}
+	.eventRoomPage .mainVideo .menu .reportTooltip::after {border-top-color:rgba(0,0,0,0.5)}
 	.eventRoomPage .modalContainer.notice {position:fixed;bottom:auto;top:0;left:0;width:100%}
 	.eventRoomPage .modalContainer.notice .modalContent {display:flex;flex-direction:column;justify-content:center;min-height:180px;padding:1.5rem 14px;color:#fff;border-radius:0;background-color:#000}
 	.eventRoomPage .modalContainer.notice .modalContent h2 {color:var(--point-color)}
@@ -300,6 +299,7 @@
 	.eventRoomPage.topicVideo .localVideo {position:initial;width:100%;height:35%}
 	.eventRoomPage.topicVideo .localVideo .inner {padding:0}
 	.eventRoomPage.topicVideo .localVideo .video {width:50%;height:100%;border-radius:0}
+	.eventRoomPage.topicVideo .localVideo .video::before {display:block}
 	.eventRoomPage.topicVideo .localVideo .video .name {display:block}
 	.eventRoomPage.topicVideo .mainVideo {height:calc(100% - 35%)}
 	.eventRoomPage.topicVideo .mainVideo .inner {padding:1rem 14px}
@@ -319,12 +319,14 @@
 }
 @media screen and (max-width: 767px) {
 	.eventRoomPage .localVideo .video {width:73px;height:93px}
-	.eventRoomPage .localVideo .mute::after {width:14px;height:16px}
 	.eventRoomPage .mainVideo .waitingRoom {width:calc(100% - calc(73px + 2rem));height:calc(93px + 2rem)}
 	.eventRoomPage .mainVideo .video .name {overflow:hidden;max-width:calc(100% - 180px)}
 	.eventRoomPage .mainVideo .video .name img {height:10px}
 	.eventRoomPage .mainVideo .video .name span {overflow:hidden;max-width:calc(100% - 20px);text-overflow:ellipsis;white-space:nowrap;font-size:1.4rem}
 	.eventRoomPage .mainVideo .timer {font-size:1.4rem}
+	.eventRoomPage .mainVideo .menu {width:100%}
+	.eventRoomPage .mainVideo .menu > ul {justify-content:space-around}
+	.eventRoomPage .mainVideo .menu > ul > li + li {margin:0}
 	.eventRoomPage.topicEvent .localVideo {height:111px}
 	.eventRoomPage.topicEvent .localVideo .topic p {font-size:1.4rem;-webkit-line-clamp:4}
 	.eventRoomPage.topicEvent .mainVideo {height:calc(100% - 111px)}
@@ -359,17 +361,15 @@
 .hostRoomPage > .inner {position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;box-sizing:border-box}
 .hostRoomPage .name {bottom:1rem;left:1rem;font-size:1.4rem}
 .hostRoomPage .localVideo {position:absolute;top:0;right:40%;width:60%;height:100%;z-index:1}
-.hostRoomPage .localVideo .inner {position:relative;width:50%;height:33.33%;margin-left:50%}
+.hostRoomPage .localVideo .inner {position:relative;width:calc(50% - 1px);height:calc(33.33% - 1px);margin-left:auto}
 .hostRoomPage .localVideo .goSession {position:absolute;bottom:4rem;width:100%;text-align:center;box-sizing:border-box;z-index:2}
 .hostRoomPage .localVideo .goSession p {display:inline-block;width:26rem;max-width:90%;padding:1rem 2rem;text-align:center;font-weight:500;font-size:1.4rem;border-radius:10px;background-color:#fff;box-sizing:border-box}
 .hostRoomPage .localVideo .goSession strong {font-weight:700;font-size:2rem;color:var(--point-color)}
 .hostRoomPage .mainVideo {position:relative;width:100%;font-size:0}
-.hostRoomPage .mainVideo .hostVideo {position:absolute;top:0;right:0;width:40%}
-.hostRoomPage .mainVideo .hostVideo .video {height:auto}
-.hostRoomPage .mainVideo .userVideo {display:flex;flex-wrap:wrap-reverse;width:60%;height:100%}
-.hostRoomPage .mainVideo .userVideo .video {display:inline-block;width:50%;height:33.33%;min-height:14rem}
-.hostRoomPage .mainVideo .userVideo .video.none {display:flex;justify-content:center;align-items:center;background-color:var(--sub-color)}
-.hostRoomPage .mainVideo .userVideo .video.none::before {content:'';display:block;width:16rem;height:3rem;background:url('../images/icon/icon_logo.svg') no-repeat center center;background-size:contain}
+.hostRoomPage .mainVideo .hostVideo {position:absolute;top:0;right:0;width:40%;height:66.66%}
+.hostRoomPage .mainVideo .userVideo {display:flex;flex-wrap:wrap-reverse;width:60%;height:100%;gap:2px}
+.hostRoomPage .mainVideo .userVideo .video {display:inline-flex;justify-content:center;align-items:center;width:calc(50% - 1px);height:calc(33.33% - 1.5px);min-height:14rem;background-color:rgba(255, 255, 255, 0.1)}
+.hostRoomPage .mainVideo .userVideo .video::before {content:'';display:block;width:8rem;height:8rem;background:url('../images/icon/icon_video_logo.svg') no-repeat center center;background-size:contain}
 .hostRoomPage .mainVideo .userVideo .video:nth-child(1) {order:4}
 .hostRoomPage .mainVideo .userVideo .video:nth-child(2) {order:5}
 .hostRoomPage .mainVideo .userVideo .video:nth-child(3) {order:3}
@@ -377,13 +377,13 @@
 .hostRoomPage .mainVideo .userVideo .video:nth-child(5) {order:1}
 .hostRoomPage .mainVideo .userVideo .video:nth-child(6) {order:6}
 .hostRoomPage .mainVideo .time {position:absolute;top:1rem;left:1rem;z-index:2}
-.hostRoomPage .mainVideo .time span {font-family:'Montserrat';font-weight:700;font-size:4rem;color:#fff}
+.hostRoomPage .mainVideo .time span {font-family:'Montserrat';font-weight:700;font-size:3.5rem;color:#fff}
 
 @media screen and (max-width: 767px) {
 	.hostRoomPage {flex-flow:row;flex-direction:column}
 	.hostRoomPage > .inner {padding:1rem 14px 5rem}
 	.hostRoomPage .localVideo {position:initial;width:100%;height:111px}
-	.hostRoomPage .localVideo .inner {display:flex;align-items:center;justify-content:center;;width:auto;height:auto;margin-left:auto;padding:1rem}
+	.hostRoomPage .localVideo .inner {display:flex;align-items:center;justify-content:center;width:auto;height:auto;margin-left:auto;padding:1rem}
 	.hostRoomPage .localVideo .video {width:73px;height:93px;max-width:none;border-radius:1rem}
 	.hostRoomPage .localVideo .video .name {display:none}
 	.hostRoomPage .localVideo .goSession {position:initial;width:auto;flex:1}
@@ -391,10 +391,10 @@
 	.hostRoomPage .mainVideo {overflow-y:auto;height:calc(100% - 111px)}
 	.hostRoomPage .mainVideo .hostVideo {position:initial;width:100%;height:40%}
 	.hostRoomPage .mainVideo .hostVideo .video {height:100%}
+	.hostRoomPage .mainVideo .userVideo .video::before {width:5rem;height:5rem}
 	.hostRoomPage .mainVideo .userVideo {flex-wrap:wrap;width:100%;height:60%}
 	.hostRoomPage .mainVideo .userVideo .video {order:initial !important}
-	.hostRoomPage .menu {position:absolute;bottom:5rem;right:50%;transform:translateX(50%)}
-	.hostRoomPage .timer {left:auto;bottom:10px;right:10px;line-height:normal}
-}
-@media screen and (max-width: 767px) {
+	.hostRoomPage .menu {position:absolute;bottom:4rem;right:1rem;height:auto}
+	.hostRoomPage .menu > ul > li::before {display:none}
+	.hostRoomPage .timer {left:auto;bottom:1rem;right:1rem;line-height:normal}
 }

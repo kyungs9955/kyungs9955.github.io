@@ -367,7 +367,7 @@
 .hostRoomPage .mainVideo .hostVideo {position:absolute;top:0;right:0;width:40%}
 .hostRoomPage .mainVideo .hostVideo .video {height:auto}
 .hostRoomPage .mainVideo .userVideo {display:flex;flex-wrap:wrap-reverse;width:60%;height:100%}
-.hostRoomPage .mainVideo .userVideo .video {display:inline-block;width:50%;height:33.33%}
+.hostRoomPage .mainVideo .userVideo .video {display:inline-block;width:50%;height:33.33%;min-height:14rem}
 .hostRoomPage .mainVideo .userVideo .video.none {display:flex;justify-content:center;align-items:center;background-color:var(--sub-color)}
 .hostRoomPage .mainVideo .userVideo .video.none::before {content:'';display:block;width:16rem;height:3rem;background:url('../images/icon/icon_logo.svg') no-repeat center center;background-size:contain}
 .hostRoomPage .mainVideo .userVideo .video:nth-child(1) {order:4}

@@ -193,14 +193,21 @@ $(document).ready(function () {
    //slider (main)
    $('.mainVisual .slick-slider').slick({
       autoplay: true,
-      infinite: false,
-      pauseOnHover: true,
+      infinite: true,
+      pauseOnHover: false,
       slidesToShow: 1,
       slidesToScroll: 1,
       swipe: true,
       arrows: true,
+      nextArrow: document.getElementById('slick-next'),
+		prevArrow: document.getElementById('slick-previous'),
       dots: true,
+      appendDots: $(".slick-page"),
       dotsClass: "slick-dots",
+      customPaging: function (slider, i) {
+         console.log(slider);
+         return  + (i + 1) + ' / ' + slider.slideCount ;
+      },
       responsive: [{
          breakpoint: 1440,
          settings: {
@@ -208,6 +215,17 @@ $(document).ready(function () {
          }
       }]
    });
+   $('#slick-pause').click( function() {
+      if ($(this).hasClass('play')){
+         $('.mainVisual .slick-slider').slick('slickPause')
+         $(this).removeClass('play') 
+         $(this).addClass('pause') 
+      } else {
+        $('.mainVisual .slick-slider').slick('slickPlay')  
+        $(this).removeClass('pause') 
+        $(this).addClass('play') 
+      }  
+    });
    $('.mainShowcase .slick-slider').slick({
       autoplay: true,
       infinite: false,
@@ -263,4 +281,8 @@ $(document).ready(function () {
       arrows: true,
       dots: true,
    });
+
 });
+
+
+

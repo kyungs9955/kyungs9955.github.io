@@ -197,11 +197,11 @@ $(document).ready(function () {
       pauseOnHover: false,
       slidesToShow: 1,
       slidesToScroll: 1,
-      swipe: true,
+      swipe: false,
       arrows: true,
+      dots: true,
       nextArrow: document.getElementById('slick-next'),
 		prevArrow: document.getElementById('slick-previous'),
-      dots: true,
       appendDots: $(".slick-page"),
       dotsClass: "slick-dots",
       customPaging: function (slider, i) {

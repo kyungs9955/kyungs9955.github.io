@@ -123,6 +123,7 @@ body {width:100%}
 .mainVisual .slick-list,
 .mainVisual .slick-track,
 .mainVisual .slick-slide {overflow:hidden;position:relative;width:100%;height:100%;outline: none;}
+.mainVisual .slick-slide {-webkit-backface-visibility: hidden;-webkit-transform: translate3d(0,0,0);will-change: transform}
 .mainVisual .slick-slide .bg {position:relative;width:100%;height:100%;background-repeat:no-repeat;background-position:center center;background-size:cover}
 .mainVisual .slick-slide .bg::before {content:'';position:absolute;top:0;left:0;display:block;width:100%;height:100%;background-color:rgba(0,0,0,0.35)}
 .mainVisual .slick-slide .img1 {width:100%;height:100%;background:url('../images/bg_main_visual_01.jpg') no-repeat center center;background-size:cover}
@@ -1124,7 +1125,3 @@ html {font-size:8px}
 	100% {transform:scale(1);opacity:0}
 }
 
-.slick-slide {
-    -webkit-backface-visibility: hidden;
-}
-.slick-slide { -webkit-transform: translate3d(0,0,0); }

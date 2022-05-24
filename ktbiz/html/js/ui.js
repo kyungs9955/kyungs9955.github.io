@@ -200,6 +200,7 @@ $(document).ready(function () {
       swipe: true,
       arrows: true,
       dots: true,
+      useTransform: false,
       nextArrow: document.getElementById('slick-next'),
 		prevArrow: document.getElementById('slick-previous'),
       appendDots: $(".slick-page"),

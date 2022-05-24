@@ -197,7 +197,7 @@ $(document).ready(function () {
       pauseOnHover: false,
       slidesToShow: 1,
       slidesToScroll: 1,
-      swipe: false,
+      swipe: true,
       arrows: true,
       dots: true,
       nextArrow: document.getElementById('slick-next'),
@@ -216,14 +216,14 @@ $(document).ready(function () {
       }]
    });
    $('#slick-pause').click( function() {
-      if ($(this).hasClass('play')){
+      if ($(this).hasClass('pause')){
          $('.mainVisual .slick-slider').slick('slickPause')
-         $(this).removeClass('play') 
-         $(this).addClass('pause') 
+         $(this).removeClass('pause') 
+         $(this).addClass('play') 
       } else {
         $('.mainVisual .slick-slider').slick('slickPlay')  
-        $(this).removeClass('pause') 
-        $(this).addClass('play') 
+        $(this).removeClass('play') 
+        $(this).addClass('pause') 
       }  
     });
    $('.mainShowcase .slick-slider').slick({

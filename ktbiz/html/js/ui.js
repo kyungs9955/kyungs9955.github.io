@@ -193,7 +193,7 @@ $(document).ready(function () {
    //slider (main)
    $('.mainVisual .slick-slider').slick({
       autoplay: true,
-      infinite: true,
+      infinite: false,
       pauseOnHover: false,
       slidesToShow: 1,
       slidesToScroll: 1,
